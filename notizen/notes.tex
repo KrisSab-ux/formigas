@@ -66,7 +66,10 @@
     \item Aufgrund von nicht eideutig lösbaren Inkonsistenzen erwarten die fehlerhaften Outputs einen HITL Ansatz.
 \end{itemize}
 % =========================================================
-
+\section{Nutzung KI}
+\begin{itemize}
+    \item 
+\end{itemize}
 
 % =========================================================
 
@@ -78,3 +81,59 @@
 
 
 \end{document}
+
+% ============================================================
+% Review: extract_required.py
+% ============================================================
+%
+% --- Staerken ---------------------------------------------
+% - Titel (<h1>) als Primaerquelle statt "erste gefundene Zahl":
+%   ueber alle 50 Dateien 0 Abweichungen zw. Titel und Tabelle/Freitext
+% - Bewusster Ausschluss des Stoersatzes ("Die X Zimmer verteilen
+%   sich auf zwei Ebenen") -- erkennt Fallen im Text statt naiv
+%   zu parsen
+% - Konflikte werden geloggt statt still ueberschrieben
+%   (Zimmerzahl-Konflikt: Titel=..., weitere Quellen=...)
+% - Sichtbare Trennung valide/fraglich: ergebnis/ vs.
+%   ergebnis/zu_pruefen/, plus _report.json und Exit-Code != 0
+% - Deterministisch und kostenlos, kein LLM noetig fuer diese
+%   7 Felder, reproduzierbar bei jedem Lauf
+% - Gegen vollstaendigen Datensatz getestet (50/50), nicht nur
+%   Stichprobe -- "46 sauber / 4 mit bekannter Luecke" ist belastbar
+%
+% --- Schwaechen ----------------------------------------------
+% - Kein Freitext-Fallback fuer wohnflaeche_qm: 4/50 Objekte mit
+%   null in Pflichtfeld -> landen in zu_pruefen/, aber ungeloest
+% - Keine Pruefung auf doppelte objekt_id: zweites Objekt mit
+%   gleicher ID ueberschreibt Datei still, ohne Warnung
+% - _dezimal() fuer Flaeche UND Zimmer genutzt, ohne Bereichspruefung
+%   gegen Schema-Grenzen (zimmer max 50, flaeche max 5000)
+% - Keine echte Validierung gegen immobilien_schema.json --
+%   fehlende_pflichtfelder() ist von Hand parallel gepflegte Kopie,
+%   divergiert still bei Schema-Aenderung
+% - Adressparsing ist eine einzelne monolithische Regex: ein
+%   unerwartetes Format (z.B. keine Hausnummer) wirft das
+%   gesamte Feld, statt Teilwerte zu retten
+% - Keine versionierten Testfaelle -- "50/50 getestet" beruht auf
+%   manuellem Skriptlauf, Regressionen faellen ggf. nicht auf
+%
+% --- Annahmen der Pipeline ------------------------------------
+% 1. <h1>-Titel folgt immer exakt "<N>-Zimmer-<Typ> in <Ort>
+%    zu <verkaufen|vermieten>"
+% 2. Titel ist inhaltlich immer korrekt (Anker ohne unabhaengige
+%    Gegenpruefung)
+% 3. Objekttypen im Titel: nur Wohnung/Haus/Gewerbeflaeche
+%    (+ ungetestet Grundstueck) -- Rest faellt auf 'sonstige'
+% 4. Adresse folgt immer "Strasse Hausnummer, PLZ Ort (Stadtteil)",
+%    genau eine 5-stellige PLZ, keine Postfaecher/Auslandsadressen
+% 5. Flaechen-/Zimmerangaben nie mit Tausendertrenner
+%    (nur Dezimalkomma)
+% 6. "ca." ist das einzige Rauschwort vor Zahlenwerten
+% 7. Wohnflaeche steht (fast) immer in der Eckdaten-Tabelle,
+%    Freitext-Fall ist Ausnahme, nicht Regelfall
+% 8. Genau ein div.expose, genau eine Eckdaten-Tabelle, genau
+%    ein <h1> pro Datei
+% 9. Alle Dateien direkt unter standort_*/*.html, UTF-8,
+%    mit html.parser korrekt parsbar
+% 10. data-objekt-nr immer vorhanden, eindeutig, stabil ueber
+%     Zeit -- keine Kollisionen zwischen/innerhalb Standorten
