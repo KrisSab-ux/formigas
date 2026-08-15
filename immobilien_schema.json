@@ -1,0 +1,278 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formigas.example/schemas/immobilie/v1",
+  "title": "Immobilienobjekt",
+  "description": "Einheitliches Zielformat für die Konsolidierung des Objektbestands. Ein Objekt pro Immobilie. Felder ohne belastbaren Wert bleiben null bzw. werden weggelassen.",
+  "type": "object",
+  "additionalProperties": false,
+
+  "required": [
+    "objekt_id",
+    "quelle",
+    "vermarktungsart",
+    "objekttyp",
+    "adresse",
+    "wohnflaeche_qm",
+    "zimmer"
+  ],
+
+  "properties": {
+
+    "objekt_id": {
+      "type": "string",
+      "description": "Eindeutige Kennung des Objekts. Übernimm die Kennung aus der Quelle, falls vorhanden.",
+      "minLength": 1
+    },
+
+    "quelle": {
+      "type": "string",
+      "description": "Herkunft des Datensatzes (Dateiname oder Standortkennung).",
+      "minLength": 1
+    },
+
+    "vermarktungsart": {
+      "type": "string",
+      "description": "Ob das Objekt vermietet oder verkauft wird. Bestimmt, welche Preisfelder zu befüllen sind.",
+      "enum": ["miete", "kauf"]
+    },
+
+    "objekttyp": {
+      "type": "string",
+      "enum": ["wohnung", "haus", "grundstueck", "gewerbe", "sonstige"]
+    },
+
+    "adresse": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["plz", "ort"],
+      "properties": {
+        "strasse": { "type": ["string", "null"] },
+        "hausnummer": {
+          "type": ["string", "null"],
+          "description": "Als String, da Zusätze wie '12a' oder '3-5' vorkommen."
+        },
+        "plz": {
+          "type": "string",
+          "description": "Fünfstellige deutsche Postleitzahl.",
+          "pattern": "^[0-9]{5}$"
+        },
+        "ort": { "type": "string", "minLength": 1 },
+        "stadtteil": { "type": ["string", "null"] }
+      }
+    },
+
+    "wohnflaeche_qm": {
+      "type": "number",
+      "description": "Wohnfläche in Quadratmetern.",
+      "exclusiveMinimum": 0,
+      "maximum": 5000
+    },
+
+    "grundstuecksflaeche_qm": {
+      "type": ["number", "null"],
+      "description": "Grundstücksfläche in Quadratmetern. Nur bei Häusern und Grundstücken relevant.",
+      "exclusiveMinimum": 0
+    },
+
+    "zimmer": {
+      "type": "number",
+      "description": "Anzahl der Zimmer. Halbe Zimmer sind zulässig (z. B. 3.5).",
+      "exclusiveMinimum": 0,
+      "maximum": 50
+    },
+
+    "etage": {
+      "type": ["integer", "null"],
+      "description": "Etage des Objekts. Erdgeschoss = 0, Untergeschoss/Souterrain = -1.",
+      "minimum": -3,
+      "maximum": 60
+    },
+
+    "etagen_gesamt": {
+      "type": ["integer", "null"],
+      "description": "Anzahl der Etagen im Gebäude.",
+      "minimum": 1
+    },
+
+    "baujahr": {
+      "type": ["integer", "null"],
+      "description": "Jahr der Fertigstellung des Gebäudes.",
+      "minimum": 1500,
+      "maximum": 2035
+    },
+
+    "letzte_sanierung": {
+      "type": ["integer", "null"],
+      "description": "Jahr der letzten umfassenden Sanierung oder Modernisierung.",
+      "minimum": 1500,
+      "maximum": 2035
+    },
+
+    "zustand": {
+      "type": ["string", "null"],
+      "enum": [
+        "erstbezug",
+        "neuwertig",
+        "gepflegt",
+        "saniert",
+        "renovierungsbeduerftig",
+        "sonstige",
+        null
+      ]
+    },
+
+    "heizungsart": {
+      "type": ["string", "null"],
+      "enum": [
+        "gas",
+        "oel",
+        "fernwaerme",
+        "waermepumpe",
+        "elektro",
+        "pellets",
+        "sonstige",
+        null
+      ]
+    },
+
+    "energieausweis": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "properties": {
+        "typ": {
+          "type": ["string", "null"],
+          "description": "Verbrauchs- oder Bedarfsausweis. Die beiden Ausweisarten sind nicht direkt vergleichbar.",
+          "enum": ["verbrauch", "bedarf", null]
+        },
+        "kennwert_kwh": {
+          "type": ["number", "null"],
+          "description": "Energiekennwert in kWh/(m²·a).",
+          "minimum": 0,
+          "maximum": 1000
+        },
+        "effizienzklasse": {
+          "type": ["string", "null"],
+          "enum": ["A+", "A", "B", "C", "D", "E", "F", "G", "H", null]
+        }
+      }
+    },
+
+    "ausstattung": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Ausstattungsmerkmale. true = vorhanden, false = ausdrücklich nicht vorhanden, null = keine Angabe.",
+      "properties": {
+        "balkon": { "type": ["boolean", "null"] },
+        "terrasse": { "type": ["boolean", "null"] },
+        "garten": { "type": ["boolean", "null"] },
+        "aufzug": { "type": ["boolean", "null"] },
+        "keller": { "type": ["boolean", "null"] },
+        "einbaukueche": { "type": ["boolean", "null"] },
+        "barrierefrei": { "type": ["boolean", "null"] },
+        "moebliert": { "type": ["boolean", "null"] }
+      }
+    },
+
+    "stellplatz_art": {
+      "type": ["string", "null"],
+      "enum": ["kein", "aussenstellplatz", "carport", "garage", "tiefgarage", null]
+    },
+
+    "haustiere_erlaubt": {
+      "type": ["boolean", "null"],
+      "description": "Nur bei Mietobjekten relevant."
+    },
+
+    "verfuegbar_ab": {
+      "type": ["string", "null"],
+      "description": "Datum der Verfügbarkeit im Format YYYY-MM-DD. 'sofort' o. Ä. bitte auflösen.",
+      "format": "date",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+
+    "provisionsfrei": {
+      "type": ["boolean", "null"]
+    },
+
+    "provision_prozent": {
+      "type": ["number", "null"],
+      "description": "Provision in Prozent, falls prozentual angegeben.",
+      "minimum": 0,
+      "maximum": 20
+    },
+
+    "provision_betrag_eur": {
+      "type": ["number", "null"],
+      "description": "Provision als Absolutbetrag in Euro, falls so angegeben.",
+      "minimum": 0
+    },
+
+    "kaltmiete_eur": {
+      "type": ["number", "null"],
+      "description": "Monatliche Kaltmiete in Euro. Nur bei vermarktungsart = miete.",
+      "minimum": 0
+    },
+
+    "nebenkosten_eur": {
+      "type": ["number", "null"],
+      "description": "Monatliche Nebenkosten in Euro. Nur bei vermarktungsart = miete.",
+      "minimum": 0
+    },
+
+    "warmmiete_eur": {
+      "type": ["number", "null"],
+      "description": "Monatliche Warmmiete in Euro. Nur bei vermarktungsart = miete.",
+      "minimum": 0
+    },
+
+    "kaution_eur": {
+      "type": ["number", "null"],
+      "description": "Kaution in Euro. Nur bei vermarktungsart = miete.",
+      "minimum": 0
+    },
+
+    "kaufpreis_eur": {
+      "type": ["number", "null"],
+      "description": "Kaufpreis in Euro. Nur bei vermarktungsart = kauf.",
+      "minimum": 0
+    },
+
+    "hausgeld_eur": {
+      "type": ["number", "null"],
+      "description": "Monatliches Hausgeld in Euro. Nur bei vermarktungsart = kauf.",
+      "minimum": 0
+    }
+  },
+
+  "allOf": [
+    {
+      "if": {
+        "properties": { "vermarktungsart": { "const": "miete" } },
+        "required": ["vermarktungsart"]
+      },
+      "then": {
+        "required": ["kaltmiete_eur"],
+        "properties": {
+          "kaufpreis_eur": { "type": "null" },
+          "hausgeld_eur": { "type": "null" }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": { "vermarktungsart": { "const": "kauf" } },
+        "required": ["vermarktungsart"]
+      },
+      "then": {
+        "required": ["kaufpreis_eur"],
+        "properties": {
+          "kaltmiete_eur": { "type": "null" },
+          "nebenkosten_eur": { "type": "null" },
+          "warmmiete_eur": { "type": "null" },
+          "kaution_eur": { "type": "null" },
+          "haustiere_erlaubt": { "type": "null" }
+        }
+      }
+    }
+  ]
+}
