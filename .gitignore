@@ -6,6 +6,7 @@ images/
 figures/
 
 # LaTeX-Buildartefakte (von pdflatex/xelatex erzeugt, nicht versionieren)
+*.tex
 *.aux
 *.log
 *.out
