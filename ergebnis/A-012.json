@@ -1,17 +1,39 @@
 {
   "objekt_id": "A-012",
-  "quelle": "standort_a",
-  "vermarktungsart": "miete",
-  "objekttyp": "wohnung",
-  "adresse": {
-    "strasse": "Kirschenallee",
-    "hausnummer": "12",
-    "plz": "78462",
-    "ort": "Konstanz",
-    "stadtteil": "Altstadt"
+  "datei": "a-012.html",
+  "pflichtfelder": {
+    "quelle": "standort_a",
+    "vermarktungsart": "miete",
+    "objekttyp": "wohnung",
+    "adresse": {
+      "strasse": "Kirschenallee",
+      "hausnummer": "12",
+      "plz": "78462",
+      "ort": "Konstanz",
+      "stadtteil": "Altstadt"
+    },
+    "wohnflaeche_qm": 90.0,
+    "zimmer": 1.0,
+    "warnungen": []
   },
-  "wohnflaeche_qm": 90.0,
-  "zimmer": 1.0,
-  "warnungen": [],
-  "datei": "a-012.html"
+  "zusatzfelder": {
+    "baujahr": 1958,
+    "letzte_sanierung": null,
+    "zustand": "gepflegt",
+    "heizungsart": "waermepumpe",
+    "energieausweis": {
+      "typ": "bedarf",
+      "kennwert_kwh": 75.8,
+      "effizienzklasse": "C"
+    },
+    "verfuegbar_ab": "2026-12-01",
+    "provisionsfrei": true,
+    "kaltmiete_eur": 1199.0,
+    "nebenkosten_eur": 232.0,
+    "warmmiete_eur": 1431.0,
+    "kaution_eur": 3597.0,
+    "kaufpreis_eur": null,
+    "hausgeld_eur": null,
+    "warnungen": []
+  }
 }

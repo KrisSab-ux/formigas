@@ -1,17 +1,39 @@
 {
   "objekt_id": "B-025",
-  "quelle": "standort_b",
-  "vermarktungsart": "kauf",
-  "objekttyp": "gewerbe",
-  "adresse": {
-    "strasse": "Talblickweg",
-    "hausnummer": "31",
-    "plz": "88131",
-    "ort": "Lindau",
-    "stadtteil": "Aeschach"
+  "datei": "b-025.html",
+  "pflichtfelder": {
+    "quelle": "standort_b",
+    "vermarktungsart": "kauf",
+    "objekttyp": "gewerbe",
+    "adresse": {
+      "strasse": "Talblickweg",
+      "hausnummer": "31",
+      "plz": "88131",
+      "ort": "Lindau",
+      "stadtteil": "Aeschach"
+    },
+    "wohnflaeche_qm": 262.0,
+    "zimmer": 3.0,
+    "warnungen": []
   },
-  "wohnflaeche_qm": 262.0,
-  "zimmer": 3.0,
-  "warnungen": [],
-  "datei": "b-025.html"
+  "zusatzfelder": {
+    "baujahr": 1972,
+    "letzte_sanierung": 2009,
+    "zustand": "saniert",
+    "heizungsart": "sonstige",
+    "energieausweis": {
+      "typ": "bedarf",
+      "kennwert_kwh": 236.3,
+      "effizienzklasse": "G"
+    },
+    "verfuegbar_ab": null,
+    "provisionsfrei": null,
+    "kaltmiete_eur": null,
+    "nebenkosten_eur": null,
+    "warmmiete_eur": null,
+    "kaution_eur": null,
+    "kaufpreis_eur": 1439000.0,
+    "hausgeld_eur": null,
+    "warnungen": []
+  }
 }

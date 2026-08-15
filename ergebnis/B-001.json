@@ -1,17 +1,39 @@
 {
   "objekt_id": "B-001",
-  "quelle": "standort_b",
-  "vermarktungsart": "kauf",
-  "objekttyp": "wohnung",
-  "adresse": {
-    "strasse": "Seeblickstrasse",
-    "hausnummer": "5-7",
-    "plz": "78462",
-    "ort": "Konstanz",
-    "stadtteil": "Altstadt"
+  "datei": "b-001.html",
+  "pflichtfelder": {
+    "quelle": "standort_b",
+    "vermarktungsart": "kauf",
+    "objekttyp": "wohnung",
+    "adresse": {
+      "strasse": "Seeblickstrasse",
+      "hausnummer": "5-7",
+      "plz": "78462",
+      "ort": "Konstanz",
+      "stadtteil": "Altstadt"
+    },
+    "wohnflaeche_qm": 45.0,
+    "zimmer": 1.0,
+    "warnungen": []
   },
-  "wohnflaeche_qm": 45.0,
-  "zimmer": 1.0,
-  "warnungen": [],
-  "datei": "b-001.html"
+  "zusatzfelder": {
+    "baujahr": 2003,
+    "letzte_sanierung": null,
+    "zustand": "gepflegt",
+    "heizungsart": "gas",
+    "energieausweis": {
+      "typ": "verbrauch",
+      "kennwert_kwh": 100.1,
+      "effizienzklasse": "D"
+    },
+    "verfuegbar_ab": null,
+    "provisionsfrei": null,
+    "kaltmiete_eur": null,
+    "nebenkosten_eur": null,
+    "warmmiete_eur": null,
+    "kaution_eur": null,
+    "kaufpreis_eur": 295000.0,
+    "hausgeld_eur": 200.0,
+    "warnungen": []
+  }
 }

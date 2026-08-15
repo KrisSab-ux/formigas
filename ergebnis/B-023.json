@@ -1,17 +1,39 @@
 {
   "objekt_id": "B-023",
-  "quelle": "standort_b",
-  "vermarktungsart": "kauf",
-  "objekttyp": "wohnung",
-  "adresse": {
-    "strasse": "Kirschenallee",
-    "hausnummer": "18",
-    "plz": "78479",
-    "ort": "Reichenau",
-    "stadtteil": null
+  "datei": "b-023.html",
+  "pflichtfelder": {
+    "quelle": "standort_b",
+    "vermarktungsart": "kauf",
+    "objekttyp": "wohnung",
+    "adresse": {
+      "strasse": "Kirschenallee",
+      "hausnummer": "18",
+      "plz": "78479",
+      "ort": "Reichenau",
+      "stadtteil": null
+    },
+    "wohnflaeche_qm": 127.0,
+    "zimmer": 2.5,
+    "warnungen": []
   },
-  "wohnflaeche_qm": 127.0,
-  "zimmer": 2.5,
-  "warnungen": [],
-  "datei": "b-023.html"
+  "zusatzfelder": {
+    "baujahr": 2024,
+    "letzte_sanierung": null,
+    "zustand": "erstbezug",
+    "heizungsart": "gas",
+    "energieausweis": {
+      "typ": "bedarf",
+      "kennwert_kwh": 132.5,
+      "effizienzklasse": "E"
+    },
+    "verfuegbar_ab": null,
+    "provisionsfrei": null,
+    "kaltmiete_eur": null,
+    "nebenkosten_eur": null,
+    "warmmiete_eur": null,
+    "kaution_eur": null,
+    "kaufpreis_eur": 747000.0,
+    "hausgeld_eur": 488.0,
+    "warnungen": []
+  }
 }

@@ -1,17 +1,39 @@
 {
   "objekt_id": "A-006",
-  "quelle": "standort_a",
-  "vermarktungsart": "miete",
-  "objekttyp": "wohnung",
-  "adresse": {
-    "strasse": "Rebhaldenweg",
-    "hausnummer": "12",
-    "plz": "88045",
-    "ort": "Friedrichshafen",
-    "stadtteil": "Manzell"
+  "datei": "a-006.html",
+  "pflichtfelder": {
+    "quelle": "standort_a",
+    "vermarktungsart": "miete",
+    "objekttyp": "wohnung",
+    "adresse": {
+      "strasse": "Rebhaldenweg",
+      "hausnummer": "12",
+      "plz": "88045",
+      "ort": "Friedrichshafen",
+      "stadtteil": "Manzell"
+    },
+    "wohnflaeche_qm": 40.0,
+    "zimmer": 4.5,
+    "warnungen": []
   },
-  "wohnflaeche_qm": 40.0,
-  "zimmer": 4.5,
-  "warnungen": [],
-  "datei": "a-006.html"
+  "zusatzfelder": {
+    "baujahr": 2011,
+    "letzte_sanierung": null,
+    "zustand": "gepflegt",
+    "heizungsart": "pellets",
+    "energieausweis": {
+      "typ": "bedarf",
+      "kennwert_kwh": 236.0,
+      "effizienzklasse": "G"
+    },
+    "verfuegbar_ab": "2027-01-01",
+    "provisionsfrei": null,
+    "kaltmiete_eur": 535.0,
+    "nebenkosten_eur": 90.0,
+    "warmmiete_eur": 625.0,
+    "kaution_eur": 1070.0,
+    "kaufpreis_eur": null,
+    "hausgeld_eur": null,
+    "warnungen": []
+  }
 }

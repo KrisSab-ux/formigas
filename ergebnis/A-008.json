@@ -1,17 +1,39 @@
 {
   "objekt_id": "A-008",
-  "quelle": "standort_a",
-  "vermarktungsart": "miete",
-  "objekttyp": "wohnung",
-  "adresse": {
-    "strasse": "Zum Sonnenhang",
-    "hausnummer": "12",
-    "plz": "88709",
-    "ort": "Meersburg",
-    "stadtteil": null
+  "datei": "a-008.html",
+  "pflichtfelder": {
+    "quelle": "standort_a",
+    "vermarktungsart": "miete",
+    "objekttyp": "wohnung",
+    "adresse": {
+      "strasse": "Zum Sonnenhang",
+      "hausnummer": "12",
+      "plz": "88709",
+      "ort": "Meersburg",
+      "stadtteil": null
+    },
+    "wohnflaeche_qm": 132.0,
+    "zimmer": 3.5,
+    "warnungen": []
   },
-  "wohnflaeche_qm": 132.0,
-  "zimmer": 3.5,
-  "warnungen": [],
-  "datei": "a-008.html"
+  "zusatzfelder": {
+    "baujahr": 1968,
+    "letzte_sanierung": null,
+    "zustand": "renovierungsbeduerftig",
+    "heizungsart": "gas",
+    "energieausweis": {
+      "typ": null,
+      "kennwert_kwh": 54.9,
+      "effizienzklasse": "B"
+    },
+    "verfuegbar_ab": "2027-01-01",
+    "provisionsfrei": null,
+    "kaltmiete_eur": 1838.0,
+    "nebenkosten_eur": 280.0,
+    "warmmiete_eur": 2118.0,
+    "kaution_eur": 3676.0,
+    "kaufpreis_eur": null,
+    "hausgeld_eur": null,
+    "warnungen": []
+  }
 }

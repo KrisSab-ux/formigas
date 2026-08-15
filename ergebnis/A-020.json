@@ -1,17 +1,39 @@
 {
   "objekt_id": "A-020",
-  "quelle": "standort_a",
-  "vermarktungsart": "miete",
-  "objekttyp": "wohnung",
-  "adresse": {
-    "strasse": "Uferwiesenweg",
-    "hausnummer": "3",
-    "plz": "78479",
-    "ort": "Reichenau",
-    "stadtteil": null
+  "datei": "a-020.html",
+  "pflichtfelder": {
+    "quelle": "standort_a",
+    "vermarktungsart": "miete",
+    "objekttyp": "wohnung",
+    "adresse": {
+      "strasse": "Uferwiesenweg",
+      "hausnummer": "3",
+      "plz": "78479",
+      "ort": "Reichenau",
+      "stadtteil": null
+    },
+    "wohnflaeche_qm": 77.0,
+    "zimmer": 4.5,
+    "warnungen": []
   },
-  "wohnflaeche_qm": 77.0,
-  "zimmer": 4.5,
-  "warnungen": [],
-  "datei": "a-020.html"
+  "zusatzfelder": {
+    "baujahr": 2003,
+    "letzte_sanierung": null,
+    "zustand": "gepflegt",
+    "heizungsart": "sonstige",
+    "energieausweis": {
+      "typ": "bedarf",
+      "kennwert_kwh": 148.9,
+      "effizienzklasse": "E"
+    },
+    "verfuegbar_ab": "2026-10-01",
+    "provisionsfrei": null,
+    "kaltmiete_eur": 854.0,
+    "nebenkosten_eur": 234.0,
+    "warmmiete_eur": 1088.0,
+    "kaution_eur": 1708.0,
+    "kaufpreis_eur": null,
+    "hausgeld_eur": null,
+    "warnungen": []
+  }
 }

@@ -1,17 +1,39 @@
 {
   "objekt_id": "B-003",
-  "quelle": "standort_b",
-  "vermarktungsart": "kauf",
-  "objekttyp": "wohnung",
-  "adresse": {
-    "strasse": "Alte Ziegelei",
-    "hausnummer": "5-7",
-    "plz": "78464",
-    "ort": "Konstanz",
-    "stadtteil": "Petershausen"
+  "datei": "b-003.html",
+  "pflichtfelder": {
+    "quelle": "standort_b",
+    "vermarktungsart": "kauf",
+    "objekttyp": "wohnung",
+    "adresse": {
+      "strasse": "Alte Ziegelei",
+      "hausnummer": "5-7",
+      "plz": "78464",
+      "ort": "Konstanz",
+      "stadtteil": "Petershausen"
+    },
+    "wohnflaeche_qm": 115.0,
+    "zimmer": 1.0,
+    "warnungen": []
   },
-  "wohnflaeche_qm": 115.0,
-  "zimmer": 1.0,
-  "warnungen": [],
-  "datei": "b-003.html"
+  "zusatzfelder": {
+    "baujahr": 2018,
+    "letzte_sanierung": null,
+    "zustand": "gepflegt",
+    "heizungsart": "sonstige",
+    "energieausweis": {
+      "typ": "verbrauch",
+      "kennwert_kwh": 171.7,
+      "effizienzklasse": "F"
+    },
+    "verfuegbar_ab": null,
+    "provisionsfrei": true,
+    "kaltmiete_eur": null,
+    "nebenkosten_eur": null,
+    "warmmiete_eur": null,
+    "kaution_eur": null,
+    "kaufpreis_eur": 688000.0,
+    "hausgeld_eur": 427.0,
+    "warnungen": []
+  }
 }

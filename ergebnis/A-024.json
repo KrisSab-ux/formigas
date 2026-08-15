@@ -1,17 +1,39 @@
 {
   "objekt_id": "A-024",
-  "quelle": "standort_a",
-  "vermarktungsart": "miete",
-  "objekttyp": "haus",
-  "adresse": {
-    "strasse": "Hohenbergstrasse",
-    "hausnummer": "12a",
-    "plz": "78467",
-    "ort": "Konstanz",
-    "stadtteil": "Allmannsdorf"
+  "datei": "a-024.html",
+  "pflichtfelder": {
+    "quelle": "standort_a",
+    "vermarktungsart": "miete",
+    "objekttyp": "haus",
+    "adresse": {
+      "strasse": "Hohenbergstrasse",
+      "hausnummer": "12a",
+      "plz": "78467",
+      "ort": "Konstanz",
+      "stadtteil": "Allmannsdorf"
+    },
+    "wohnflaeche_qm": 254.0,
+    "zimmer": 7.0,
+    "warnungen": []
   },
-  "wohnflaeche_qm": 254.0,
-  "zimmer": 7.0,
-  "warnungen": [],
-  "datei": "a-024.html"
+  "zusatzfelder": {
+    "baujahr": 1972,
+    "letzte_sanierung": null,
+    "zustand": "neuwertig",
+    "heizungsart": "pellets",
+    "energieausweis": {
+      "typ": null,
+      "kennwert_kwh": 40.5,
+      "effizienzklasse": "A"
+    },
+    "verfuegbar_ab": "2026-09-01",
+    "provisionsfrei": null,
+    "kaltmiete_eur": 3905.0,
+    "nebenkosten_eur": 786.0,
+    "warmmiete_eur": 4691.0,
+    "kaution_eur": 11715.0,
+    "kaufpreis_eur": null,
+    "hausgeld_eur": null,
+    "warnungen": []
+  }
 }

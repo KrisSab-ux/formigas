@@ -1,17 +1,39 @@
 {
   "objekt_id": "B-021",
-  "quelle": "standort_b",
-  "vermarktungsart": "kauf",
-  "objekttyp": "wohnung",
-  "adresse": {
-    "strasse": "Kirschenallee",
-    "hausnummer": "3",
-    "plz": "78467",
-    "ort": "Konstanz",
-    "stadtteil": "Allmannsdorf"
+  "datei": "b-021.html",
+  "pflichtfelder": {
+    "quelle": "standort_b",
+    "vermarktungsart": "kauf",
+    "objekttyp": "wohnung",
+    "adresse": {
+      "strasse": "Kirschenallee",
+      "hausnummer": "3",
+      "plz": "78467",
+      "ort": "Konstanz",
+      "stadtteil": "Allmannsdorf"
+    },
+    "wohnflaeche_qm": 116.0,
+    "zimmer": 2.0,
+    "warnungen": []
   },
-  "wohnflaeche_qm": 116.0,
-  "zimmer": 2.0,
-  "warnungen": [],
-  "datei": "b-021.html"
+  "zusatzfelder": {
+    "baujahr": 1972,
+    "letzte_sanierung": 2018,
+    "zustand": "saniert",
+    "heizungsart": "fernwaerme",
+    "energieausweis": {
+      "typ": "bedarf",
+      "kennwert_kwh": 105.1,
+      "effizienzklasse": "D"
+    },
+    "verfuegbar_ab": null,
+    "provisionsfrei": true,
+    "kaltmiete_eur": null,
+    "nebenkosten_eur": null,
+    "warmmiete_eur": null,
+    "kaution_eur": null,
+    "kaufpreis_eur": 548000.0,
+    "hausgeld_eur": 532.0,
+    "warnungen": []
+  }
 }

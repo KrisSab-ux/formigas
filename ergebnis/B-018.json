@@ -1,17 +1,39 @@
 {
   "objekt_id": "B-018",
-  "quelle": "standort_b",
-  "vermarktungsart": "miete",
-  "objekttyp": "wohnung",
-  "adresse": {
-    "strasse": "Fischerlaende",
-    "hausnummer": "7",
-    "plz": "88662",
-    "ort": "Ueberlingen",
-    "stadtteil": "Nussdorf"
+  "datei": "b-018.html",
+  "pflichtfelder": {
+    "quelle": "standort_b",
+    "vermarktungsart": "miete",
+    "objekttyp": "wohnung",
+    "adresse": {
+      "strasse": "Fischerlaende",
+      "hausnummer": "7",
+      "plz": "88662",
+      "ort": "Ueberlingen",
+      "stadtteil": "Nussdorf"
+    },
+    "wohnflaeche_qm": 127.0,
+    "zimmer": 3.0,
+    "warnungen": []
   },
-  "wohnflaeche_qm": 127.0,
-  "zimmer": 3.0,
-  "warnungen": [],
-  "datei": "b-018.html"
+  "zusatzfelder": {
+    "baujahr": 1958,
+    "letzte_sanierung": 2015,
+    "zustand": "saniert",
+    "heizungsart": "waermepumpe",
+    "energieausweis": {
+      "typ": "bedarf",
+      "kennwert_kwh": 53.8,
+      "effizienzklasse": "B"
+    },
+    "verfuegbar_ab": "2027-01-01",
+    "provisionsfrei": true,
+    "kaltmiete_eur": 1240.0,
+    "nebenkosten_eur": 339.0,
+    "warmmiete_eur": 1579.0,
+    "kaution_eur": 3720.0,
+    "kaufpreis_eur": null,
+    "hausgeld_eur": null,
+    "warnungen": []
+  }
 }

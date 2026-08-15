@@ -1,17 +1,39 @@
 {
   "objekt_id": "B-005",
-  "quelle": "standort_b",
-  "vermarktungsart": "kauf",
-  "objekttyp": "wohnung",
-  "adresse": {
-    "strasse": "Uferwiesenweg",
-    "hausnummer": "18",
-    "plz": "78464",
-    "ort": "Konstanz",
-    "stadtteil": "Petershausen"
+  "datei": "b-005.html",
+  "pflichtfelder": {
+    "quelle": "standort_b",
+    "vermarktungsart": "kauf",
+    "objekttyp": "wohnung",
+    "adresse": {
+      "strasse": "Uferwiesenweg",
+      "hausnummer": "18",
+      "plz": "78464",
+      "ort": "Konstanz",
+      "stadtteil": "Petershausen"
+    },
+    "wohnflaeche_qm": 134.0,
+    "zimmer": 3.0,
+    "warnungen": []
   },
-  "wohnflaeche_qm": 134.0,
-  "zimmer": 3.0,
-  "warnungen": [],
-  "datei": "b-005.html"
+  "zusatzfelder": {
+    "baujahr": 1981,
+    "letzte_sanierung": null,
+    "zustand": "renovierungsbeduerftig",
+    "heizungsart": "gas",
+    "energieausweis": {
+      "typ": null,
+      "kennwert_kwh": 98.4,
+      "effizienzklasse": "C"
+    },
+    "verfuegbar_ab": null,
+    "provisionsfrei": null,
+    "kaltmiete_eur": null,
+    "nebenkosten_eur": null,
+    "warmmiete_eur": null,
+    "kaution_eur": null,
+    "kaufpreis_eur": 953000.0,
+    "hausgeld_eur": 467.0,
+    "warnungen": []
+  }
 }

@@ -1,17 +1,39 @@
 {
   "objekt_id": "B-010",
-  "quelle": "standort_b",
-  "vermarktungsart": "miete",
-  "objekttyp": "wohnung",
-  "adresse": {
-    "strasse": "Nussbaumweg",
-    "hausnummer": "7",
-    "plz": "88079",
-    "ort": "Kressbronn",
-    "stadtteil": null
+  "datei": "b-010.html",
+  "pflichtfelder": {
+    "quelle": "standort_b",
+    "vermarktungsart": "miete",
+    "objekttyp": "wohnung",
+    "adresse": {
+      "strasse": "Nussbaumweg",
+      "hausnummer": "7",
+      "plz": "88079",
+      "ort": "Kressbronn",
+      "stadtteil": null
+    },
+    "wohnflaeche_qm": 60.0,
+    "zimmer": 3.5,
+    "warnungen": []
   },
-  "wohnflaeche_qm": 60.0,
-  "zimmer": 3.5,
-  "warnungen": [],
-  "datei": "b-010.html"
+  "zusatzfelder": {
+    "baujahr": 1972,
+    "letzte_sanierung": null,
+    "zustand": "renovierungsbeduerftig",
+    "heizungsart": "waermepumpe",
+    "energieausweis": {
+      "typ": null,
+      "kennwert_kwh": 192.2,
+      "effizienzklasse": "F"
+    },
+    "verfuegbar_ab": "2026-10-01",
+    "provisionsfrei": true,
+    "kaltmiete_eur": 700.0,
+    "nebenkosten_eur": 111.0,
+    "warmmiete_eur": 811.0,
+    "kaution_eur": 1400.0,
+    "kaufpreis_eur": null,
+    "hausgeld_eur": null,
+    "warnungen": []
+  }
 }

@@ -1,17 +1,39 @@
 {
   "objekt_id": "B-022",
-  "quelle": "standort_b",
-  "vermarktungsart": "miete",
-  "objekttyp": "wohnung",
-  "adresse": {
-    "strasse": "Zum Sonnenhang",
-    "hausnummer": "12",
-    "plz": "78351",
-    "ort": "Bodman-Ludwigshafen",
-    "stadtteil": null
+  "datei": "b-022.html",
+  "pflichtfelder": {
+    "quelle": "standort_b",
+    "vermarktungsart": "miete",
+    "objekttyp": "wohnung",
+    "adresse": {
+      "strasse": "Zum Sonnenhang",
+      "hausnummer": "12",
+      "plz": "78351",
+      "ort": "Bodman-Ludwigshafen",
+      "stadtteil": null
+    },
+    "wohnflaeche_qm": 125.0,
+    "zimmer": 2.0,
+    "warnungen": []
   },
-  "wohnflaeche_qm": 125.0,
-  "zimmer": 2.0,
-  "warnungen": [],
-  "datei": "b-022.html"
+  "zusatzfelder": {
+    "baujahr": 1958,
+    "letzte_sanierung": 2009,
+    "zustand": "saniert",
+    "heizungsart": "fernwaerme",
+    "energieausweis": {
+      "typ": "verbrauch",
+      "kennwert_kwh": 116.1,
+      "effizienzklasse": "D"
+    },
+    "verfuegbar_ab": "2026-12-01",
+    "provisionsfrei": true,
+    "kaltmiete_eur": 1793.0,
+    "nebenkosten_eur": 453.0,
+    "warmmiete_eur": 2246.0,
+    "kaution_eur": 5379.0,
+    "kaufpreis_eur": null,
+    "hausgeld_eur": null,
+    "warnungen": []
+  }
 }

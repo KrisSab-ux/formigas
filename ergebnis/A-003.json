@@ -1,17 +1,39 @@
 {
   "objekt_id": "A-003",
-  "quelle": "standort_a",
-  "vermarktungsart": "kauf",
-  "objekttyp": "wohnung",
-  "adresse": {
-    "strasse": "Alte Ziegelei",
-    "hausnummer": "3",
-    "plz": "88677",
-    "ort": "Markdorf",
-    "stadtteil": null
+  "datei": "a-003.html",
+  "pflichtfelder": {
+    "quelle": "standort_a",
+    "vermarktungsart": "kauf",
+    "objekttyp": "wohnung",
+    "adresse": {
+      "strasse": "Alte Ziegelei",
+      "hausnummer": "3",
+      "plz": "88677",
+      "ort": "Markdorf",
+      "stadtteil": null
+    },
+    "wohnflaeche_qm": 87.0,
+    "zimmer": 4.5,
+    "warnungen": []
   },
-  "wohnflaeche_qm": 87.0,
-  "zimmer": 4.5,
-  "warnungen": [],
-  "datei": "a-003.html"
+  "zusatzfelder": {
+    "baujahr": 1958,
+    "letzte_sanierung": null,
+    "zustand": "neuwertig",
+    "heizungsart": "waermepumpe",
+    "energieausweis": {
+      "typ": "bedarf",
+      "kennwert_kwh": 222.3,
+      "effizienzklasse": "G"
+    },
+    "verfuegbar_ab": null,
+    "provisionsfrei": null,
+    "kaltmiete_eur": null,
+    "nebenkosten_eur": null,
+    "warmmiete_eur": null,
+    "kaution_eur": null,
+    "kaufpreis_eur": 525000.0,
+    "hausgeld_eur": 399.0,
+    "warnungen": []
+  }
 }

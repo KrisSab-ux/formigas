@@ -1,17 +1,39 @@
 {
   "objekt_id": "A-011",
-  "quelle": "standort_a",
-  "vermarktungsart": "kauf",
-  "objekttyp": "wohnung",
-  "adresse": {
-    "strasse": "Am Obstgarten",
-    "hausnummer": "5-7",
-    "plz": "88131",
-    "ort": "Lindau",
-    "stadtteil": "Aeschach"
+  "datei": "a-011.html",
+  "pflichtfelder": {
+    "quelle": "standort_a",
+    "vermarktungsart": "kauf",
+    "objekttyp": "wohnung",
+    "adresse": {
+      "strasse": "Am Obstgarten",
+      "hausnummer": "5-7",
+      "plz": "88131",
+      "ort": "Lindau",
+      "stadtteil": "Aeschach"
+    },
+    "wohnflaeche_qm": 58.0,
+    "zimmer": 4.5,
+    "warnungen": []
   },
-  "wohnflaeche_qm": 58.0,
-  "zimmer": 4.5,
-  "warnungen": [],
-  "datei": "a-011.html"
+  "zusatzfelder": {
+    "baujahr": 2011,
+    "letzte_sanierung": null,
+    "zustand": "renovierungsbeduerftig",
+    "heizungsart": "pellets",
+    "energieausweis": {
+      "typ": null,
+      "kennwert_kwh": 153.0,
+      "effizienzklasse": "E"
+    },
+    "verfuegbar_ab": null,
+    "provisionsfrei": null,
+    "kaltmiete_eur": null,
+    "nebenkosten_eur": null,
+    "warmmiete_eur": null,
+    "kaution_eur": null,
+    "kaufpreis_eur": 308000.0,
+    "hausgeld_eur": 258.0,
+    "warnungen": []
+  }
 }

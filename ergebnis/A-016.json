@@ -1,17 +1,39 @@
 {
   "objekt_id": "A-016",
-  "quelle": "standort_a",
-  "vermarktungsart": "miete",
-  "objekttyp": "haus",
-  "adresse": {
-    "strasse": "Im Winkelgarten",
-    "hausnummer": "18",
-    "plz": "78315",
-    "ort": "Radolfzell",
-    "stadtteil": "Mettnau"
+  "datei": "a-016.html",
+  "pflichtfelder": {
+    "quelle": "standort_a",
+    "vermarktungsart": "miete",
+    "objekttyp": "haus",
+    "adresse": {
+      "strasse": "Im Winkelgarten",
+      "hausnummer": "18",
+      "plz": "78315",
+      "ort": "Radolfzell",
+      "stadtteil": "Mettnau"
+    },
+    "wohnflaeche_qm": 255.0,
+    "zimmer": 5.5,
+    "warnungen": []
   },
-  "wohnflaeche_qm": 255.0,
-  "zimmer": 5.5,
-  "warnungen": [],
-  "datei": "a-016.html"
+  "zusatzfelder": {
+    "baujahr": 2018,
+    "letzte_sanierung": null,
+    "zustand": "renovierungsbeduerftig",
+    "heizungsart": "sonstige",
+    "energieausweis": {
+      "typ": "bedarf",
+      "kennwert_kwh": 121.7,
+      "effizienzklasse": "D"
+    },
+    "verfuegbar_ab": "2027-01-01",
+    "provisionsfrei": true,
+    "kaltmiete_eur": 3085.0,
+    "nebenkosten_eur": 590.0,
+    "warmmiete_eur": 3675.0,
+    "kaution_eur": 6170.0,
+    "kaufpreis_eur": null,
+    "hausgeld_eur": null,
+    "warnungen": []
+  }
 }

@@ -1,17 +1,39 @@
 {
   "objekt_id": "B-024",
-  "quelle": "standort_b",
-  "vermarktungsart": "miete",
-  "objekttyp": "gewerbe",
-  "adresse": {
-    "strasse": "Am Obstgarten",
-    "hausnummer": "24b",
-    "plz": "88662",
-    "ort": "Ueberlingen",
-    "stadtteil": "Nussdorf"
+  "datei": "b-024.html",
+  "pflichtfelder": {
+    "quelle": "standort_b",
+    "vermarktungsart": "miete",
+    "objekttyp": "gewerbe",
+    "adresse": {
+      "strasse": "Am Obstgarten",
+      "hausnummer": "24b",
+      "plz": "88662",
+      "ort": "Ueberlingen",
+      "stadtteil": "Nussdorf"
+    },
+    "wohnflaeche_qm": 111.0,
+    "zimmer": 6.0,
+    "warnungen": []
   },
-  "wohnflaeche_qm": 111.0,
-  "zimmer": 6.0,
-  "warnungen": [],
-  "datei": "b-024.html"
+  "zusatzfelder": {
+    "baujahr": 2011,
+    "letzte_sanierung": null,
+    "zustand": "gepflegt",
+    "heizungsart": "oel",
+    "energieausweis": {
+      "typ": null,
+      "kennwert_kwh": 101.9,
+      "effizienzklasse": "D"
+    },
+    "verfuegbar_ab": "2026-12-01",
+    "provisionsfrei": true,
+    "kaltmiete_eur": 1332.0,
+    "nebenkosten_eur": 255.0,
+    "warmmiete_eur": 1587.0,
+    "kaution_eur": 3996.0,
+    "kaufpreis_eur": null,
+    "hausgeld_eur": null,
+    "warnungen": []
+  }
 }

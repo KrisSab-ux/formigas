@@ -36,30 +36,34 @@
     {
       "objekt_id": "B-008",
       "datei": "b-008.html",
-      "warnungen": [
+      "warnungen_pflichtfelder": [
         "Wohnflaeche fehlt in der Eckdaten-Tabelle"
-      ]
+      ],
+      "warnungen_zusatzfelder": []
     },
     {
       "objekt_id": "B-012",
       "datei": "b-012.html",
-      "warnungen": [
+      "warnungen_pflichtfelder": [
         "Wohnflaeche fehlt in der Eckdaten-Tabelle"
-      ]
+      ],
+      "warnungen_zusatzfelder": []
     },
     {
       "objekt_id": "B-016",
       "datei": "b-016.html",
-      "warnungen": [
+      "warnungen_pflichtfelder": [
         "Wohnflaeche fehlt in der Eckdaten-Tabelle"
-      ]
+      ],
+      "warnungen_zusatzfelder": []
     },
     {
       "objekt_id": "B-020",
       "datei": "b-020.html",
-      "warnungen": [
+      "warnungen_pflichtfelder": [
         "Wohnflaeche fehlt in der Eckdaten-Tabelle"
-      ]
+      ],
+      "warnungen_zusatzfelder": []
     }
   ]
 }

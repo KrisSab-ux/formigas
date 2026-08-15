@@ -1,17 +1,39 @@
 {
   "objekt_id": "B-019",
-  "quelle": "standort_b",
-  "vermarktungsart": "kauf",
-  "objekttyp": "wohnung",
-  "adresse": {
-    "strasse": "Ahornstrasse",
-    "hausnummer": "12a",
-    "plz": "78476",
-    "ort": "Allensbach",
-    "stadtteil": null
+  "datei": "b-019.html",
+  "pflichtfelder": {
+    "quelle": "standort_b",
+    "vermarktungsart": "kauf",
+    "objekttyp": "wohnung",
+    "adresse": {
+      "strasse": "Ahornstrasse",
+      "hausnummer": "12a",
+      "plz": "78476",
+      "ort": "Allensbach",
+      "stadtteil": null
+    },
+    "wohnflaeche_qm": 48.0,
+    "zimmer": 1.5,
+    "warnungen": []
   },
-  "wohnflaeche_qm": 48.0,
-  "zimmer": 1.5,
-  "warnungen": [],
-  "datei": "b-019.html"
+  "zusatzfelder": {
+    "baujahr": 2011,
+    "letzte_sanierung": null,
+    "zustand": "renovierungsbeduerftig",
+    "heizungsart": "waermepumpe",
+    "energieausweis": {
+      "typ": "verbrauch",
+      "kennwert_kwh": 186.0,
+      "effizienzklasse": "F"
+    },
+    "verfuegbar_ab": null,
+    "provisionsfrei": null,
+    "kaltmiete_eur": null,
+    "nebenkosten_eur": null,
+    "warmmiete_eur": null,
+    "kaution_eur": null,
+    "kaufpreis_eur": 244000.0,
+    "hausgeld_eur": 145.0,
+    "warnungen": []
+  }
 }

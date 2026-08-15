@@ -1,17 +1,39 @@
 {
   "objekt_id": "B-011",
-  "quelle": "standort_b",
-  "vermarktungsart": "kauf",
-  "objekttyp": "haus",
-  "adresse": {
-    "strasse": "Uferwiesenweg",
-    "hausnummer": "12a",
-    "plz": "78315",
-    "ort": "Radolfzell",
-    "stadtteil": "Mettnau"
+  "datei": "b-011.html",
+  "pflichtfelder": {
+    "quelle": "standort_b",
+    "vermarktungsart": "kauf",
+    "objekttyp": "haus",
+    "adresse": {
+      "strasse": "Uferwiesenweg",
+      "hausnummer": "12a",
+      "plz": "78315",
+      "ort": "Radolfzell",
+      "stadtteil": "Mettnau"
+    },
+    "wohnflaeche_qm": 259.0,
+    "zimmer": 5.5,
+    "warnungen": []
   },
-  "wohnflaeche_qm": 259.0,
-  "zimmer": 5.5,
-  "warnungen": [],
-  "datei": "b-011.html"
+  "zusatzfelder": {
+    "baujahr": 1994,
+    "letzte_sanierung": null,
+    "zustand": "renovierungsbeduerftig",
+    "heizungsart": "waermepumpe",
+    "energieausweis": {
+      "typ": "bedarf",
+      "kennwert_kwh": 169.9,
+      "effizienzklasse": "F"
+    },
+    "verfuegbar_ab": null,
+    "provisionsfrei": null,
+    "kaltmiete_eur": null,
+    "nebenkosten_eur": null,
+    "warmmiete_eur": null,
+    "kaution_eur": null,
+    "kaufpreis_eur": 1466000.0,
+    "hausgeld_eur": null,
+    "warnungen": []
+  }
 }

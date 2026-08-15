@@ -1,17 +1,39 @@
 {
   "objekt_id": "A-022",
-  "quelle": "standort_a",
-  "vermarktungsart": "miete",
-  "objekttyp": "wohnung",
-  "adresse": {
-    "strasse": "Talblickweg",
-    "hausnummer": "12a",
-    "plz": "88709",
-    "ort": "Meersburg",
-    "stadtteil": null
+  "datei": "a-022.html",
+  "pflichtfelder": {
+    "quelle": "standort_a",
+    "vermarktungsart": "miete",
+    "objekttyp": "wohnung",
+    "adresse": {
+      "strasse": "Talblickweg",
+      "hausnummer": "12a",
+      "plz": "88709",
+      "ort": "Meersburg",
+      "stadtteil": null
+    },
+    "wohnflaeche_qm": 95.0,
+    "zimmer": 2.0,
+    "warnungen": []
   },
-  "wohnflaeche_qm": 95.0,
-  "zimmer": 2.0,
-  "warnungen": [],
-  "datei": "a-022.html"
+  "zusatzfelder": {
+    "baujahr": 2003,
+    "letzte_sanierung": null,
+    "zustand": "renovierungsbeduerftig",
+    "heizungsart": "oel",
+    "energieausweis": {
+      "typ": "verbrauch",
+      "kennwert_kwh": 169.6,
+      "effizienzklasse": "F"
+    },
+    "verfuegbar_ab": "2027-01-01",
+    "provisionsfrei": null,
+    "kaltmiete_eur": 1383.0,
+    "nebenkosten_eur": 330.0,
+    "warmmiete_eur": 1713.0,
+    "kaution_eur": 4149.0,
+    "kaufpreis_eur": null,
+    "hausgeld_eur": null,
+    "warnungen": []
+  }
 }

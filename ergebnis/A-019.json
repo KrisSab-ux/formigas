@@ -1,17 +1,39 @@
 {
   "objekt_id": "A-019",
-  "quelle": "standort_a",
-  "vermarktungsart": "kauf",
-  "objekttyp": "haus",
-  "adresse": {
-    "strasse": "Buchenrain",
-    "hausnummer": "12a",
-    "plz": "78462",
-    "ort": "Konstanz",
-    "stadtteil": "Altstadt"
+  "datei": "a-019.html",
+  "pflichtfelder": {
+    "quelle": "standort_a",
+    "vermarktungsart": "kauf",
+    "objekttyp": "haus",
+    "adresse": {
+      "strasse": "Buchenrain",
+      "hausnummer": "12a",
+      "plz": "78462",
+      "ort": "Konstanz",
+      "stadtteil": "Altstadt"
+    },
+    "wohnflaeche_qm": 197.0,
+    "zimmer": 5.5,
+    "warnungen": []
   },
-  "wohnflaeche_qm": 197.0,
-  "zimmer": 5.5,
-  "warnungen": [],
-  "datei": "a-019.html"
+  "zusatzfelder": {
+    "baujahr": 2011,
+    "letzte_sanierung": null,
+    "zustand": "neuwertig",
+    "heizungsart": "fernwaerme",
+    "energieausweis": {
+      "typ": "verbrauch",
+      "kennwert_kwh": 177.3,
+      "effizienzklasse": "F"
+    },
+    "verfuegbar_ab": null,
+    "provisionsfrei": null,
+    "kaltmiete_eur": null,
+    "nebenkosten_eur": null,
+    "warmmiete_eur": null,
+    "kaution_eur": null,
+    "kaufpreis_eur": 843000.0,
+    "hausgeld_eur": null,
+    "warnungen": []
+  }
 }

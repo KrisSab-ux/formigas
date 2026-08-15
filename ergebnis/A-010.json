@@ -1,17 +1,39 @@
 {
   "objekt_id": "A-010",
-  "quelle": "standort_a",
-  "vermarktungsart": "miete",
-  "objekttyp": "wohnung",
-  "adresse": {
-    "strasse": "Rebhaldenweg",
-    "hausnummer": "18",
-    "plz": "78462",
-    "ort": "Konstanz",
-    "stadtteil": "Altstadt"
+  "datei": "a-010.html",
+  "pflichtfelder": {
+    "quelle": "standort_a",
+    "vermarktungsart": "miete",
+    "objekttyp": "wohnung",
+    "adresse": {
+      "strasse": "Rebhaldenweg",
+      "hausnummer": "18",
+      "plz": "78462",
+      "ort": "Konstanz",
+      "stadtteil": "Altstadt"
+    },
+    "wohnflaeche_qm": 51.0,
+    "zimmer": 4.0,
+    "warnungen": []
   },
-  "wohnflaeche_qm": 51.0,
-  "zimmer": 4.0,
-  "warnungen": [],
-  "datei": "a-010.html"
+  "zusatzfelder": {
+    "baujahr": 1994,
+    "letzte_sanierung": 2009,
+    "zustand": "saniert",
+    "heizungsart": "oel",
+    "energieausweis": {
+      "typ": "bedarf",
+      "kennwert_kwh": 67.8,
+      "effizienzklasse": "B"
+    },
+    "verfuegbar_ab": "2026-12-01",
+    "provisionsfrei": null,
+    "kaltmiete_eur": 867.0,
+    "nebenkosten_eur": 177.0,
+    "warmmiete_eur": 1044.0,
+    "kaution_eur": 2601.0,
+    "kaufpreis_eur": null,
+    "hausgeld_eur": null,
+    "warnungen": []
+  }
 }

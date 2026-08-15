@@ -1,17 +1,39 @@
 {
   "objekt_id": "A-015",
-  "quelle": "standort_a",
-  "vermarktungsart": "kauf",
-  "objekttyp": "gewerbe",
-  "adresse": {
-    "strasse": "Klosterackerweg",
-    "hausnummer": "18",
-    "plz": "78479",
-    "ort": "Reichenau",
-    "stadtteil": null
+  "datei": "a-015.html",
+  "pflichtfelder": {
+    "quelle": "standort_a",
+    "vermarktungsart": "kauf",
+    "objekttyp": "gewerbe",
+    "adresse": {
+      "strasse": "Klosterackerweg",
+      "hausnummer": "18",
+      "plz": "78479",
+      "ort": "Reichenau",
+      "stadtteil": null
+    },
+    "wohnflaeche_qm": 137.0,
+    "zimmer": 3.0,
+    "warnungen": []
   },
-  "wohnflaeche_qm": 137.0,
-  "zimmer": 3.0,
-  "warnungen": [],
-  "datei": "a-015.html"
+  "zusatzfelder": {
+    "baujahr": 2018,
+    "letzte_sanierung": null,
+    "zustand": "renovierungsbeduerftig",
+    "heizungsart": "elektro",
+    "energieausweis": {
+      "typ": "verbrauch",
+      "kennwert_kwh": 85.8,
+      "effizienzklasse": "C"
+    },
+    "verfuegbar_ab": null,
+    "provisionsfrei": null,
+    "kaltmiete_eur": null,
+    "nebenkosten_eur": null,
+    "warmmiete_eur": null,
+    "kaution_eur": null,
+    "kaufpreis_eur": 555000.0,
+    "hausgeld_eur": null,
+    "warnungen": []
+  }
 }

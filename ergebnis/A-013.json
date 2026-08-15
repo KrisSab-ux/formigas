@@ -1,17 +1,39 @@
 {
   "objekt_id": "A-013",
-  "quelle": "standort_a",
-  "vermarktungsart": "kauf",
-  "objekttyp": "wohnung",
-  "adresse": {
-    "strasse": "Uferwiesenweg",
-    "hausnummer": "12",
-    "plz": "78462",
-    "ort": "Konstanz",
-    "stadtteil": "Altstadt"
+  "datei": "a-013.html",
+  "pflichtfelder": {
+    "quelle": "standort_a",
+    "vermarktungsart": "kauf",
+    "objekttyp": "wohnung",
+    "adresse": {
+      "strasse": "Uferwiesenweg",
+      "hausnummer": "12",
+      "plz": "78462",
+      "ort": "Konstanz",
+      "stadtteil": "Altstadt"
+    },
+    "wohnflaeche_qm": 134.0,
+    "zimmer": 2.5,
+    "warnungen": []
   },
-  "wohnflaeche_qm": 134.0,
-  "zimmer": 2.5,
-  "warnungen": [],
-  "datei": "a-013.html"
+  "zusatzfelder": {
+    "baujahr": 1968,
+    "letzte_sanierung": null,
+    "zustand": "gepflegt",
+    "heizungsart": "fernwaerme",
+    "energieausweis": {
+      "typ": "bedarf",
+      "kennwert_kwh": 119.3,
+      "effizienzklasse": "D"
+    },
+    "verfuegbar_ab": null,
+    "provisionsfrei": null,
+    "kaltmiete_eur": null,
+    "nebenkosten_eur": null,
+    "warmmiete_eur": null,
+    "kaution_eur": null,
+    "kaufpreis_eur": 703000.0,
+    "hausgeld_eur": 581.0,
+    "warnungen": []
+  }
 }

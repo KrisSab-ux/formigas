@@ -1,17 +1,39 @@
 {
   "objekt_id": "A-018",
-  "quelle": "standort_a",
-  "vermarktungsart": "miete",
-  "objekttyp": "wohnung",
-  "adresse": {
-    "strasse": "Am Schilfgraben",
-    "hausnummer": "12",
-    "plz": "78464",
-    "ort": "Konstanz",
-    "stadtteil": "Petershausen"
+  "datei": "a-018.html",
+  "pflichtfelder": {
+    "quelle": "standort_a",
+    "vermarktungsart": "miete",
+    "objekttyp": "wohnung",
+    "adresse": {
+      "strasse": "Am Schilfgraben",
+      "hausnummer": "12",
+      "plz": "78464",
+      "ort": "Konstanz",
+      "stadtteil": "Petershausen"
+    },
+    "wohnflaeche_qm": 44.0,
+    "zimmer": 3.0,
+    "warnungen": []
   },
-  "wohnflaeche_qm": 44.0,
-  "zimmer": 3.0,
-  "warnungen": [],
-  "datei": "a-018.html"
+  "zusatzfelder": {
+    "baujahr": 2024,
+    "letzte_sanierung": null,
+    "zustand": "erstbezug",
+    "heizungsart": "fernwaerme",
+    "energieausweis": {
+      "typ": "bedarf",
+      "kennwert_kwh": 117.9,
+      "effizienzklasse": "D"
+    },
+    "verfuegbar_ab": "2026-11-01",
+    "provisionsfrei": null,
+    "kaltmiete_eur": 473.0,
+    "nebenkosten_eur": 86.0,
+    "warmmiete_eur": 559.0,
+    "kaution_eur": 946.0,
+    "kaufpreis_eur": null,
+    "hausgeld_eur": null,
+    "warnungen": []
+  }
 }

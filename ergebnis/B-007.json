@@ -1,17 +1,39 @@
 {
   "objekt_id": "B-007",
-  "quelle": "standort_b",
-  "vermarktungsart": "kauf",
-  "objekttyp": "haus",
-  "adresse": {
-    "strasse": "Klosterackerweg",
-    "hausnummer": "3",
-    "plz": "88079",
-    "ort": "Kressbronn",
-    "stadtteil": null
+  "datei": "b-007.html",
+  "pflichtfelder": {
+    "quelle": "standort_b",
+    "vermarktungsart": "kauf",
+    "objekttyp": "haus",
+    "adresse": {
+      "strasse": "Klosterackerweg",
+      "hausnummer": "3",
+      "plz": "88079",
+      "ort": "Kressbronn",
+      "stadtteil": null
+    },
+    "wohnflaeche_qm": 114.0,
+    "zimmer": 6.0,
+    "warnungen": []
   },
-  "wohnflaeche_qm": 114.0,
-  "zimmer": 6.0,
-  "warnungen": [],
-  "datei": "b-007.html"
+  "zusatzfelder": {
+    "baujahr": 1981,
+    "letzte_sanierung": null,
+    "zustand": "gepflegt",
+    "heizungsart": "waermepumpe",
+    "energieausweis": {
+      "typ": null,
+      "kennwert_kwh": 185.1,
+      "effizienzklasse": "F"
+    },
+    "verfuegbar_ab": null,
+    "provisionsfrei": true,
+    "kaltmiete_eur": null,
+    "nebenkosten_eur": null,
+    "warmmiete_eur": null,
+    "kaution_eur": null,
+    "kaufpreis_eur": 658000.0,
+    "hausgeld_eur": null,
+    "warnungen": []
+  }
 }

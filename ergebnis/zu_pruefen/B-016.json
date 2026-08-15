@@ -1,22 +1,44 @@
 {
   "objekt_id": "B-016",
-  "quelle": "standort_b",
-  "vermarktungsart": "miete",
-  "objekttyp": "wohnung",
-  "adresse": {
-    "strasse": "Rebhaldenweg",
-    "hausnummer": "31",
-    "plz": "78462",
-    "ort": "Konstanz",
-    "stadtteil": "Altstadt"
-  },
-  "wohnflaeche_qm": null,
-  "zimmer": 3.0,
-  "warnungen": [
-    "Wohnflaeche fehlt in der Eckdaten-Tabelle"
-  ],
   "datei": "b-016.html",
-  "fehlende_pflichtfelder": [
-    "wohnflaeche_qm"
-  ]
+  "pflichtfelder": {
+    "quelle": "standort_b",
+    "vermarktungsart": "miete",
+    "objekttyp": "wohnung",
+    "adresse": {
+      "strasse": "Rebhaldenweg",
+      "hausnummer": "31",
+      "plz": "78462",
+      "ort": "Konstanz",
+      "stadtteil": "Altstadt"
+    },
+    "wohnflaeche_qm": null,
+    "zimmer": 3.0,
+    "warnungen": [
+      "Wohnflaeche fehlt in der Eckdaten-Tabelle"
+    ],
+    "fehlende_pflichtfelder": [
+      "wohnflaeche_qm"
+    ]
+  },
+  "zusatzfelder": {
+    "baujahr": 2003,
+    "letzte_sanierung": null,
+    "zustand": "neuwertig",
+    "heizungsart": "pellets",
+    "energieausweis": {
+      "typ": "verbrauch",
+      "kennwert_kwh": 56.8,
+      "effizienzklasse": "B"
+    },
+    "verfuegbar_ab": "2026-10-01",
+    "provisionsfrei": null,
+    "kaltmiete_eur": 1337.0,
+    "nebenkosten_eur": 338.0,
+    "warmmiete_eur": null,
+    "kaution_eur": 4011.0,
+    "kaufpreis_eur": null,
+    "hausgeld_eur": null,
+    "warnungen": []
+  }
 }

@@ -1,22 +1,44 @@
 {
   "objekt_id": "B-020",
-  "quelle": "standort_b",
-  "vermarktungsart": "miete",
-  "objekttyp": "haus",
-  "adresse": {
-    "strasse": "Alte Ziegelei",
-    "hausnummer": "3",
-    "plz": "78479",
-    "ort": "Reichenau",
-    "stadtteil": null
-  },
-  "wohnflaeche_qm": null,
-  "zimmer": 5.0,
-  "warnungen": [
-    "Wohnflaeche fehlt in der Eckdaten-Tabelle"
-  ],
   "datei": "b-020.html",
-  "fehlende_pflichtfelder": [
-    "wohnflaeche_qm"
-  ]
+  "pflichtfelder": {
+    "quelle": "standort_b",
+    "vermarktungsart": "miete",
+    "objekttyp": "haus",
+    "adresse": {
+      "strasse": "Alte Ziegelei",
+      "hausnummer": "3",
+      "plz": "78479",
+      "ort": "Reichenau",
+      "stadtteil": null
+    },
+    "wohnflaeche_qm": null,
+    "zimmer": 5.0,
+    "warnungen": [
+      "Wohnflaeche fehlt in der Eckdaten-Tabelle"
+    ],
+    "fehlende_pflichtfelder": [
+      "wohnflaeche_qm"
+    ]
+  },
+  "zusatzfelder": {
+    "baujahr": 1981,
+    "letzte_sanierung": null,
+    "zustand": "gepflegt",
+    "heizungsart": "pellets",
+    "energieausweis": {
+      "typ": "bedarf",
+      "kennwert_kwh": 178.2,
+      "effizienzklasse": "F"
+    },
+    "verfuegbar_ab": "2026-11-01",
+    "provisionsfrei": true,
+    "kaltmiete_eur": 3015.0,
+    "nebenkosten_eur": 495.0,
+    "warmmiete_eur": null,
+    "kaution_eur": 9045.0,
+    "kaufpreis_eur": null,
+    "hausgeld_eur": null,
+    "warnungen": []
+  }
 }

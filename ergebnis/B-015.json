@@ -1,17 +1,39 @@
 {
   "objekt_id": "B-015",
-  "quelle": "standort_b",
-  "vermarktungsart": "kauf",
-  "objekttyp": "haus",
-  "adresse": {
-    "strasse": "Klosterackerweg",
-    "hausnummer": "31",
-    "plz": "78315",
-    "ort": "Radolfzell",
-    "stadtteil": "Mettnau"
+  "datei": "b-015.html",
+  "pflichtfelder": {
+    "quelle": "standort_b",
+    "vermarktungsart": "kauf",
+    "objekttyp": "haus",
+    "adresse": {
+      "strasse": "Klosterackerweg",
+      "hausnummer": "31",
+      "plz": "78315",
+      "ort": "Radolfzell",
+      "stadtteil": "Mettnau"
+    },
+    "wohnflaeche_qm": 253.0,
+    "zimmer": 6.0,
+    "warnungen": []
   },
-  "wohnflaeche_qm": 253.0,
-  "zimmer": 6.0,
-  "warnungen": [],
-  "datei": "b-015.html"
+  "zusatzfelder": {
+    "baujahr": 1994,
+    "letzte_sanierung": null,
+    "zustand": "renovierungsbeduerftig",
+    "heizungsart": "pellets",
+    "energieausweis": {
+      "typ": "verbrauch",
+      "kennwert_kwh": 155.5,
+      "effizienzklasse": "E"
+    },
+    "verfuegbar_ab": null,
+    "provisionsfrei": true,
+    "kaltmiete_eur": null,
+    "nebenkosten_eur": null,
+    "warmmiete_eur": null,
+    "kaution_eur": null,
+    "kaufpreis_eur": 1097000.0,
+    "hausgeld_eur": null,
+    "warnungen": []
+  }
 }

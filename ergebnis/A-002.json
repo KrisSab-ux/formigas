@@ -1,17 +1,39 @@
 {
   "objekt_id": "A-002",
-  "quelle": "standort_a",
-  "vermarktungsart": "miete",
-  "objekttyp": "wohnung",
-  "adresse": {
-    "strasse": "Hohenbergstrasse",
-    "hausnummer": "18",
-    "plz": "78479",
-    "ort": "Reichenau",
-    "stadtteil": null
+  "datei": "a-002.html",
+  "pflichtfelder": {
+    "quelle": "standort_a",
+    "vermarktungsart": "miete",
+    "objekttyp": "wohnung",
+    "adresse": {
+      "strasse": "Hohenbergstrasse",
+      "hausnummer": "18",
+      "plz": "78479",
+      "ort": "Reichenau",
+      "stadtteil": null
+    },
+    "wohnflaeche_qm": 136.0,
+    "zimmer": 2.5,
+    "warnungen": []
   },
-  "wohnflaeche_qm": 136.0,
-  "zimmer": 2.5,
-  "warnungen": [],
-  "datei": "a-002.html"
+  "zusatzfelder": {
+    "baujahr": 2003,
+    "letzte_sanierung": null,
+    "zustand": "gepflegt",
+    "heizungsart": "gas",
+    "energieausweis": {
+      "typ": "verbrauch",
+      "kennwert_kwh": 98.9,
+      "effizienzklasse": "C"
+    },
+    "verfuegbar_ab": "2026-09-01",
+    "provisionsfrei": null,
+    "kaltmiete_eur": 1668.0,
+    "nebenkosten_eur": 338.0,
+    "warmmiete_eur": 2006.0,
+    "kaution_eur": 3336.0,
+    "kaufpreis_eur": null,
+    "hausgeld_eur": null,
+    "warnungen": []
+  }
 }

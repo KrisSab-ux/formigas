@@ -1,17 +1,39 @@
 {
   "objekt_id": "B-009",
-  "quelle": "standort_b",
-  "vermarktungsart": "kauf",
-  "objekttyp": "wohnung",
-  "adresse": {
-    "strasse": "Fischerlaende",
-    "hausnummer": "18",
-    "plz": "78479",
-    "ort": "Reichenau",
-    "stadtteil": null
+  "datei": "b-009.html",
+  "pflichtfelder": {
+    "quelle": "standort_b",
+    "vermarktungsart": "kauf",
+    "objekttyp": "wohnung",
+    "adresse": {
+      "strasse": "Fischerlaende",
+      "hausnummer": "18",
+      "plz": "78479",
+      "ort": "Reichenau",
+      "stadtteil": null
+    },
+    "wohnflaeche_qm": 82.0,
+    "zimmer": 4.0,
+    "warnungen": []
   },
-  "wohnflaeche_qm": 82.0,
-  "zimmer": 4.0,
-  "warnungen": [],
-  "datei": "b-009.html"
+  "zusatzfelder": {
+    "baujahr": 1994,
+    "letzte_sanierung": null,
+    "zustand": "gepflegt",
+    "heizungsart": "fernwaerme",
+    "energieausweis": {
+      "typ": "bedarf",
+      "kennwert_kwh": 73.6,
+      "effizienzklasse": "B"
+    },
+    "verfuegbar_ab": null,
+    "provisionsfrei": null,
+    "kaltmiete_eur": null,
+    "nebenkosten_eur": null,
+    "warmmiete_eur": null,
+    "kaution_eur": null,
+    "kaufpreis_eur": 542000.0,
+    "hausgeld_eur": 330.0,
+    "warnungen": []
+  }
 }

@@ -1,17 +1,39 @@
 {
   "objekt_id": "B-014",
-  "quelle": "standort_b",
-  "vermarktungsart": "miete",
-  "objekttyp": "wohnung",
-  "adresse": {
-    "strasse": "Steingasse",
-    "hausnummer": "18",
-    "plz": "88662",
-    "ort": "Ueberlingen",
-    "stadtteil": "Nussdorf"
+  "datei": "b-014.html",
+  "pflichtfelder": {
+    "quelle": "standort_b",
+    "vermarktungsart": "miete",
+    "objekttyp": "wohnung",
+    "adresse": {
+      "strasse": "Steingasse",
+      "hausnummer": "18",
+      "plz": "88662",
+      "ort": "Ueberlingen",
+      "stadtteil": "Nussdorf"
+    },
+    "wohnflaeche_qm": 92.0,
+    "zimmer": 1.0,
+    "warnungen": []
   },
-  "wohnflaeche_qm": 92.0,
-  "zimmer": 1.0,
-  "warnungen": [],
-  "datei": "b-014.html"
+  "zusatzfelder": {
+    "baujahr": 1958,
+    "letzte_sanierung": null,
+    "zustand": "gepflegt",
+    "heizungsart": "fernwaerme",
+    "energieausweis": {
+      "typ": "bedarf",
+      "kennwert_kwh": 107.2,
+      "effizienzklasse": "D"
+    },
+    "verfuegbar_ab": "2027-01-01",
+    "provisionsfrei": null,
+    "kaltmiete_eur": 902.0,
+    "nebenkosten_eur": 138.0,
+    "warmmiete_eur": 1040.0,
+    "kaution_eur": 2706.0,
+    "kaufpreis_eur": null,
+    "hausgeld_eur": null,
+    "warnungen": []
+  }
 }
