@@ -26,6 +26,19 @@ Strategie fuer die Zusatzfelder:
 - Ein Satz wie "Der Preis von X EUR ist nach Absprache verhandelbar" wird
   absichtlich NICHT geparst: der Betrag passt in der Stichprobe zu keinem der
   anderen Felder (vermutlicher Stoersatz).
+
+Zusaetzlich: Validierung des kombinierten Objekts gegen immobilien_schema.json
+(Draft 2020-12). Das ersetzt NICHT die Extraktion fehlender Felder (der
+Validator kann nur pruefen, was im Objekt steht, nicht Code fuer neue Felder
+schreiben) -- der Mehrwert liegt in zwei Dingen, die die eigene Logik oben
+nicht abdeckt: (1) Wertebereiche/Enums bereits extrahierter Felder (z.B.
+zimmer <= 50), die bei einem Regex-Bug unbemerkt durchrutschen wuerden, und
+(2) die bedingte allOf/if-then-Regel (bei vermarktungsart=kauf muessen die
+Mietfelder null sein und umgekehrt), die sonst ueberhaupt nicht geprueft wird.
+Felder ohne jegliche Extraktionslogik (grundstuecksflaeche_qm, etage,
+etagen_gesamt, ausstattung, stellplatz_art, haustiere_erlaubt,
+provision_prozent, provision_betrag_eur) fehlen im validierten Objekt bewusst
+komplett, statt sie als 'geprueft und null' vorzutaeuschen.
 """
 from __future__ import annotations
 
@@ -37,9 +50,12 @@ from pathlib import Path
 from typing import Optional
 
 from bs4 import BeautifulSoup
+from jsonschema import Draft202012Validator
 
 ROOT = Path(__file__).resolve().parent.parent
 DATEN_DIR = ROOT / "daten"
+SCHEMA = json.loads((ROOT / "immobilien_schema.json").read_text(encoding="utf-8"))
+VALIDATOR = Draft202012Validator(SCHEMA)
 
 # ============================================================
 # Pflichtfelder
@@ -466,6 +482,51 @@ def extrahiere_zusatzfelder(tabelle: dict, beschreibung_text: str) -> Zusatzfeld
 
 
 # ============================================================
+# Schema-Validierung (immobilien_schema.json, Draft 2020-12)
+# ============================================================
+
+def _schema_objekt(pflicht: Pflichtfelder, zusatz: Zusatzfelder) -> dict:
+    """Baut das flache Objekt in der Form von immobilien_schema.json.
+
+    Preisfelder werden bewusst immer aufgenommen (auch als None), damit die
+    allOf/if-then-Regel (kauf <-> Mietfelder null, miete <-> Kaufpreis/
+    Hausgeld null) beim Fehlen tatsaechlich geprueft wird -- ein fehlender
+    Schluessel wird von 'properties' sonst stillschweigend uebersprungen.
+    Felder ohne Extraktionslogik (s. Moduldoc) fehlen hier bewusst ganz.
+    """
+    return {
+        "objekt_id": pflicht.objekt_id,
+        "quelle": pflicht.quelle,
+        "vermarktungsart": pflicht.vermarktungsart,
+        "objekttyp": pflicht.objekttyp,
+        "adresse": pflicht.adresse,
+        "wohnflaeche_qm": pflicht.wohnflaeche_qm,
+        "zimmer": pflicht.zimmer,
+        "baujahr": zusatz.baujahr,
+        "letzte_sanierung": zusatz.letzte_sanierung,
+        "zustand": zusatz.zustand,
+        "heizungsart": zusatz.heizungsart,
+        "energieausweis": zusatz.energieausweis,
+        "verfuegbar_ab": zusatz.verfuegbar_ab,
+        "provisionsfrei": zusatz.provisionsfrei,
+        "kaltmiete_eur": zusatz.kaltmiete_eur,
+        "nebenkosten_eur": zusatz.nebenkosten_eur,
+        "warmmiete_eur": zusatz.warmmiete_eur,
+        "kaution_eur": zusatz.kaution_eur,
+        "kaufpreis_eur": zusatz.kaufpreis_eur,
+        "hausgeld_eur": zusatz.hausgeld_eur,
+    }
+
+
+def validiere(objekt: dict) -> dict:
+    fehler = [
+        f"{'/'.join(str(p) for p in e.absolute_path) or '<objekt>'}: {e.message}"
+        for e in sorted(VALIDATOR.iter_errors(objekt), key=lambda e: list(e.absolute_path))
+    ]
+    return {"valide": not fehler, "fehler": fehler}
+
+
+# ============================================================
 # Ablauf
 # ============================================================
 
@@ -509,6 +570,7 @@ def main() -> int:
             "datei": pfad.name,
             "pflichtfelder": pflicht_dict,
             "zusatzfelder": asdict(zusatz),
+            "schema_validierung": validiere(_schema_objekt(pflicht, zusatz)),
         }
         if fehlend:
             fehlerhaft.append(datensatz)
@@ -522,11 +584,13 @@ def main() -> int:
     mit_warnung = [
         e for e in ergebnisse if e["pflichtfelder"]["warnungen"] or e["zusatzfelder"]["warnungen"]
     ]
+    schema_invalide = [e for e in ergebnisse if not e["schema_validierung"]["valide"]]
 
     report = {
         "anzahl_objekte": len(ergebnisse),
         "anzahl_fehlerhaft": len(fehlerhaft),
         "anzahl_mit_warnung": len(mit_warnung),
+        "anzahl_schema_invalide": len(schema_invalide),
         "fehlerhaft": [
             {"objekt_id": e["objekt_id"], "datei": e["datei"], "fehlende_pflichtfelder": e["pflichtfelder"]["fehlende_pflichtfelder"]}
             for e in fehlerhaft
@@ -540,6 +604,10 @@ def main() -> int:
             }
             for e in mit_warnung
         ],
+        "schema_invalide": [
+            {"objekt_id": e["objekt_id"], "datei": e["datei"], "fehler": e["schema_validierung"]["fehler"]}
+            for e in schema_invalide
+        ],
     }
     (out_dir / "_report.json").write_text(
         json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8"
@@ -547,6 +615,9 @@ def main() -> int:
 
     print(f"{len(ergebnisse)} Objekte verarbeitet.")
     print(f"{len(fehlerhaft)} mit fehlenden Pflichtfeldern -> ergebnis/zu_pruefen/, siehe ergebnis/_report.json")
+    print(f"{len(schema_invalide)} nicht schema-valide gegen immobilien_schema.json:")
+    for e in schema_invalide:
+        print(f"  - {e['datei']}: {e['schema_validierung']['fehler']}")
     print(f"{len(mit_warnung)} mit Warnungen (Pflicht- oder Zusatzfelder):")
     for e in mit_warnung:
         alle = e["pflichtfelder"]["warnungen"] + e["zusatzfelder"]["warnungen"]

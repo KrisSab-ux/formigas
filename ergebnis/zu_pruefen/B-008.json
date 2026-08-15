@@ -40,5 +40,11 @@
     "kaufpreis_eur": null,
     "hausgeld_eur": null,
     "warnungen": []
+  },
+  "schema_validierung": {
+    "valide": false,
+    "fehler": [
+      "wohnflaeche_qm: None is not of type 'number'"
+    ]
   }
 }

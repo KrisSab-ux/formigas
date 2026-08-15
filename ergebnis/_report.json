@@ -2,6 +2,7 @@
   "anzahl_objekte": 50,
   "anzahl_fehlerhaft": 4,
   "anzahl_mit_warnung": 4,
+  "anzahl_schema_invalide": 4,
   "fehlerhaft": [
     {
       "objekt_id": "B-008",
@@ -64,6 +65,36 @@
         "Wohnflaeche fehlt in der Eckdaten-Tabelle"
       ],
       "warnungen_zusatzfelder": []
+    }
+  ],
+  "schema_invalide": [
+    {
+      "objekt_id": "B-008",
+      "datei": "b-008.html",
+      "fehler": [
+        "wohnflaeche_qm: None is not of type 'number'"
+      ]
+    },
+    {
+      "objekt_id": "B-012",
+      "datei": "b-012.html",
+      "fehler": [
+        "wohnflaeche_qm: None is not of type 'number'"
+      ]
+    },
+    {
+      "objekt_id": "B-016",
+      "datei": "b-016.html",
+      "fehler": [
+        "wohnflaeche_qm: None is not of type 'number'"
+      ]
+    },
+    {
+      "objekt_id": "B-020",
+      "datei": "b-020.html",
+      "fehler": [
+        "wohnflaeche_qm: None is not of type 'number'"
+      ]
     }
   ]
 }

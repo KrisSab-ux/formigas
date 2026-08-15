@@ -35,5 +35,9 @@
     "kaufpreis_eur": 187000.0,
     "hausgeld_eur": 169.0,
     "warnungen": []
+  },
+  "schema_validierung": {
+    "valide": true,
+    "fehler": []
   }
 }

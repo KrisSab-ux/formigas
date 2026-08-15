@@ -51,10 +51,13 @@ Siehe `requirements.txt`, per `pip install -r requirements.txt`:
 
 - **`beautifulsoup4`** — HTML-Parsing der Exposés (Tabelle, Titel, Adresse,
   Freitext).
-- **`jsonschema`** — für die Validierung der Ergebnisse gegen
-  `immobilien_schema.json` vorgesehen; von `extract_required.py` aktuell noch
-  nicht genutzt (das Skript prüft Pflichtfelder bislang mit eigener Logik,
-  siehe `Pflichtfelder.fehlende_pflichtfelder()`).
+- **`jsonschema`** — validiert jedes Objekt zusätzlich gegen
+  `immobilien_schema.json` (Draft 2020-12), inkl. Wertebereichen/Enums und der
+  bedingten `allOf`/`if-then`-Regel (Preisfelder je nach `vermarktungsart`).
+  Ersetzt nicht `Pflichtfelder.fehlende_pflichtfelder()` (die Ordner-Trennung
+  `ergebnis/` vs. `zu_pruefen/` hängt weiterhin daran), sondern ergänzt sie um
+  Fehler, die die eigene Logik nicht abdeckt — Ergebnis steht pro Objekt unter
+  `schema_validierung`, siehe `ergebnis/_report.json` für die Übersicht.
 
 Keine weiteren Systemabhängigkeiten (kein LLM-Zugang nötig für die aktuell
 implementierten Felder, siehe Notizen zur Feldauswahl-Begründung).
