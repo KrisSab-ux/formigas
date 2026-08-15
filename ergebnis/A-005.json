@@ -1,0 +1,17 @@
+{
+  "objekt_id": "A-005",
+  "quelle": "standort_a",
+  "vermarktungsart": "kauf",
+  "objekttyp": "haus",
+  "adresse": {
+    "strasse": "Am Obstgarten",
+    "hausnummer": "31",
+    "plz": "88662",
+    "ort": "Ueberlingen",
+    "stadtteil": "Nussdorf"
+  },
+  "wohnflaeche_qm": 112.0,
+  "zimmer": 7.0,
+  "warnungen": [],
+  "datei": "a-005.html"
+}

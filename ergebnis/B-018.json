@@ -1,0 +1,17 @@
+{
+  "objekt_id": "B-018",
+  "quelle": "standort_b",
+  "vermarktungsart": "miete",
+  "objekttyp": "wohnung",
+  "adresse": {
+    "strasse": "Fischerlaende",
+    "hausnummer": "7",
+    "plz": "88662",
+    "ort": "Ueberlingen",
+    "stadtteil": "Nussdorf"
+  },
+  "wohnflaeche_qm": 127.0,
+  "zimmer": 3.0,
+  "warnungen": [],
+  "datei": "b-018.html"
+}

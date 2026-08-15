@@ -1,0 +1,17 @@
+{
+  "objekt_id": "B-013",
+  "quelle": "standort_b",
+  "vermarktungsart": "kauf",
+  "objekttyp": "wohnung",
+  "adresse": {
+    "strasse": "Ahornstrasse",
+    "hausnummer": "7",
+    "plz": "78467",
+    "ort": "Konstanz",
+    "stadtteil": "Allmannsdorf"
+  },
+  "wohnflaeche_qm": 85.0,
+  "zimmer": 2.0,
+  "warnungen": [],
+  "datei": "b-013.html"
+}

@@ -1,0 +1,17 @@
+{
+  "objekt_id": "A-011",
+  "quelle": "standort_a",
+  "vermarktungsart": "kauf",
+  "objekttyp": "wohnung",
+  "adresse": {
+    "strasse": "Am Obstgarten",
+    "hausnummer": "5-7",
+    "plz": "88131",
+    "ort": "Lindau",
+    "stadtteil": "Aeschach"
+  },
+  "wohnflaeche_qm": 58.0,
+  "zimmer": 4.5,
+  "warnungen": [],
+  "datei": "a-011.html"
+}

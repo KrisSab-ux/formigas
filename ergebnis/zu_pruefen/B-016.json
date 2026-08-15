@@ -1,0 +1,22 @@
+{
+  "objekt_id": "B-016",
+  "quelle": "standort_b",
+  "vermarktungsart": "miete",
+  "objekttyp": "wohnung",
+  "adresse": {
+    "strasse": "Rebhaldenweg",
+    "hausnummer": "31",
+    "plz": "78462",
+    "ort": "Konstanz",
+    "stadtteil": "Altstadt"
+  },
+  "wohnflaeche_qm": null,
+  "zimmer": 3.0,
+  "warnungen": [
+    "Wohnflaeche fehlt in der Eckdaten-Tabelle"
+  ],
+  "datei": "b-016.html",
+  "fehlende_pflichtfelder": [
+    "wohnflaeche_qm"
+  ]
+}

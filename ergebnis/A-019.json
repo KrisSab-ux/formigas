@@ -1,0 +1,17 @@
+{
+  "objekt_id": "A-019",
+  "quelle": "standort_a",
+  "vermarktungsart": "kauf",
+  "objekttyp": "haus",
+  "adresse": {
+    "strasse": "Buchenrain",
+    "hausnummer": "12a",
+    "plz": "78462",
+    "ort": "Konstanz",
+    "stadtteil": "Altstadt"
+  },
+  "wohnflaeche_qm": 197.0,
+  "zimmer": 5.5,
+  "warnungen": [],
+  "datei": "a-019.html"
+}

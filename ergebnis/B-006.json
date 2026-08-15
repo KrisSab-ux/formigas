@@ -1,0 +1,17 @@
+{
+  "objekt_id": "B-006",
+  "quelle": "standort_b",
+  "vermarktungsart": "miete",
+  "objekttyp": "wohnung",
+  "adresse": {
+    "strasse": "Lindenhoehe",
+    "hausnummer": "12a",
+    "plz": "78333",
+    "ort": "Stockach",
+    "stadtteil": null
+  },
+  "wohnflaeche_qm": 40.0,
+  "zimmer": 3.0,
+  "warnungen": [],
+  "datei": "b-006.html"
+}

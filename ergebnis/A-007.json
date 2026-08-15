@@ -1,0 +1,17 @@
+{
+  "objekt_id": "A-007",
+  "quelle": "standort_a",
+  "vermarktungsart": "kauf",
+  "objekttyp": "wohnung",
+  "adresse": {
+    "strasse": "Im Winkelgarten",
+    "hausnummer": "5-7",
+    "plz": "88131",
+    "ort": "Lindau",
+    "stadtteil": "Aeschach"
+  },
+  "wohnflaeche_qm": 89.0,
+  "zimmer": 1.0,
+  "warnungen": [],
+  "datei": "a-007.html"
+}

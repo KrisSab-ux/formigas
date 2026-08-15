@@ -1,0 +1,17 @@
+{
+  "objekt_id": "A-006",
+  "quelle": "standort_a",
+  "vermarktungsart": "miete",
+  "objekttyp": "wohnung",
+  "adresse": {
+    "strasse": "Rebhaldenweg",
+    "hausnummer": "12",
+    "plz": "88045",
+    "ort": "Friedrichshafen",
+    "stadtteil": "Manzell"
+  },
+  "wohnflaeche_qm": 40.0,
+  "zimmer": 4.5,
+  "warnungen": [],
+  "datei": "a-006.html"
+}

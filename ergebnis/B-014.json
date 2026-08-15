@@ -1,0 +1,17 @@
+{
+  "objekt_id": "B-014",
+  "quelle": "standort_b",
+  "vermarktungsart": "miete",
+  "objekttyp": "wohnung",
+  "adresse": {
+    "strasse": "Steingasse",
+    "hausnummer": "18",
+    "plz": "88662",
+    "ort": "Ueberlingen",
+    "stadtteil": "Nussdorf"
+  },
+  "wohnflaeche_qm": 92.0,
+  "zimmer": 1.0,
+  "warnungen": [],
+  "datei": "b-014.html"
+}

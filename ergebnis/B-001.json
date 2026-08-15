@@ -1,0 +1,17 @@
+{
+  "objekt_id": "B-001",
+  "quelle": "standort_b",
+  "vermarktungsart": "kauf",
+  "objekttyp": "wohnung",
+  "adresse": {
+    "strasse": "Seeblickstrasse",
+    "hausnummer": "5-7",
+    "plz": "78462",
+    "ort": "Konstanz",
+    "stadtteil": "Altstadt"
+  },
+  "wohnflaeche_qm": 45.0,
+  "zimmer": 1.0,
+  "warnungen": [],
+  "datei": "b-001.html"
+}

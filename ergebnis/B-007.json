@@ -1,0 +1,17 @@
+{
+  "objekt_id": "B-007",
+  "quelle": "standort_b",
+  "vermarktungsart": "kauf",
+  "objekttyp": "haus",
+  "adresse": {
+    "strasse": "Klosterackerweg",
+    "hausnummer": "3",
+    "plz": "88079",
+    "ort": "Kressbronn",
+    "stadtteil": null
+  },
+  "wohnflaeche_qm": 114.0,
+  "zimmer": 6.0,
+  "warnungen": [],
+  "datei": "b-007.html"
+}

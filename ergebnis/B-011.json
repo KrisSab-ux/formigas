@@ -1,0 +1,17 @@
+{
+  "objekt_id": "B-011",
+  "quelle": "standort_b",
+  "vermarktungsart": "kauf",
+  "objekttyp": "haus",
+  "adresse": {
+    "strasse": "Uferwiesenweg",
+    "hausnummer": "12a",
+    "plz": "78315",
+    "ort": "Radolfzell",
+    "stadtteil": "Mettnau"
+  },
+  "wohnflaeche_qm": 259.0,
+  "zimmer": 5.5,
+  "warnungen": [],
+  "datei": "b-011.html"
+}

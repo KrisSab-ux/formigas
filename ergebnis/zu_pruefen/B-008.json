@@ -1,0 +1,22 @@
+{
+  "objekt_id": "B-008",
+  "quelle": "standort_b",
+  "vermarktungsart": "miete",
+  "objekttyp": "wohnung",
+  "adresse": {
+    "strasse": "Kirschenallee",
+    "hausnummer": "7",
+    "plz": "78351",
+    "ort": "Bodman-Ludwigshafen",
+    "stadtteil": null
+  },
+  "wohnflaeche_qm": null,
+  "zimmer": 4.5,
+  "warnungen": [
+    "Wohnflaeche fehlt in der Eckdaten-Tabelle"
+  ],
+  "datei": "b-008.html",
+  "fehlende_pflichtfelder": [
+    "wohnflaeche_qm"
+  ]
+}

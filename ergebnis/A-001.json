@@ -1,0 +1,17 @@
+{
+  "objekt_id": "A-001",
+  "quelle": "standort_a",
+  "vermarktungsart": "kauf",
+  "objekttyp": "wohnung",
+  "adresse": {
+    "strasse": "Lindenhoehe",
+    "hausnummer": "18",
+    "plz": "88045",
+    "ort": "Friedrichshafen",
+    "stadtteil": "Manzell"
+  },
+  "wohnflaeche_qm": 129.0,
+  "zimmer": 4.5,
+  "warnungen": [],
+  "datei": "a-001.html"
+}

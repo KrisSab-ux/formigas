@@ -1,0 +1,17 @@
+{
+  "objekt_id": "B-017",
+  "quelle": "standort_b",
+  "vermarktungsart": "kauf",
+  "objekttyp": "wohnung",
+  "adresse": {
+    "strasse": "Hohenbergstrasse",
+    "hausnummer": "7",
+    "plz": "88045",
+    "ort": "Friedrichshafen",
+    "stadtteil": "Manzell"
+  },
+  "wohnflaeche_qm": 128.0,
+  "zimmer": 4.5,
+  "warnungen": [],
+  "datei": "b-017.html"
+}

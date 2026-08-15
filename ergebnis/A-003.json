@@ -1,0 +1,17 @@
+{
+  "objekt_id": "A-003",
+  "quelle": "standort_a",
+  "vermarktungsart": "kauf",
+  "objekttyp": "wohnung",
+  "adresse": {
+    "strasse": "Alte Ziegelei",
+    "hausnummer": "3",
+    "plz": "88677",
+    "ort": "Markdorf",
+    "stadtteil": null
+  },
+  "wohnflaeche_qm": 87.0,
+  "zimmer": 4.5,
+  "warnungen": [],
+  "datei": "a-003.html"
+}

@@ -1,0 +1,22 @@
+{
+  "objekt_id": "B-020",
+  "quelle": "standort_b",
+  "vermarktungsart": "miete",
+  "objekttyp": "haus",
+  "adresse": {
+    "strasse": "Alte Ziegelei",
+    "hausnummer": "3",
+    "plz": "78479",
+    "ort": "Reichenau",
+    "stadtteil": null
+  },
+  "wohnflaeche_qm": null,
+  "zimmer": 5.0,
+  "warnungen": [
+    "Wohnflaeche fehlt in der Eckdaten-Tabelle"
+  ],
+  "datei": "b-020.html",
+  "fehlende_pflichtfelder": [
+    "wohnflaeche_qm"
+  ]
+}

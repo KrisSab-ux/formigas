@@ -1,0 +1,17 @@
+{
+  "objekt_id": "B-015",
+  "quelle": "standort_b",
+  "vermarktungsart": "kauf",
+  "objekttyp": "haus",
+  "adresse": {
+    "strasse": "Klosterackerweg",
+    "hausnummer": "31",
+    "plz": "78315",
+    "ort": "Radolfzell",
+    "stadtteil": "Mettnau"
+  },
+  "wohnflaeche_qm": 253.0,
+  "zimmer": 6.0,
+  "warnungen": [],
+  "datei": "b-015.html"
+}

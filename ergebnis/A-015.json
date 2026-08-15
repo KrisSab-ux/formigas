@@ -1,0 +1,17 @@
+{
+  "objekt_id": "A-015",
+  "quelle": "standort_a",
+  "vermarktungsart": "kauf",
+  "objekttyp": "gewerbe",
+  "adresse": {
+    "strasse": "Klosterackerweg",
+    "hausnummer": "18",
+    "plz": "78479",
+    "ort": "Reichenau",
+    "stadtteil": null
+  },
+  "wohnflaeche_qm": 137.0,
+  "zimmer": 3.0,
+  "warnungen": [],
+  "datei": "a-015.html"
+}

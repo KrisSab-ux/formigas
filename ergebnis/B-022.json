@@ -1,0 +1,17 @@
+{
+  "objekt_id": "B-022",
+  "quelle": "standort_b",
+  "vermarktungsart": "miete",
+  "objekttyp": "wohnung",
+  "adresse": {
+    "strasse": "Zum Sonnenhang",
+    "hausnummer": "12",
+    "plz": "78351",
+    "ort": "Bodman-Ludwigshafen",
+    "stadtteil": null
+  },
+  "wohnflaeche_qm": 125.0,
+  "zimmer": 2.0,
+  "warnungen": [],
+  "datei": "b-022.html"
+}

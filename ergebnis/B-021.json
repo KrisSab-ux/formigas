@@ -1,0 +1,17 @@
+{
+  "objekt_id": "B-021",
+  "quelle": "standort_b",
+  "vermarktungsart": "kauf",
+  "objekttyp": "wohnung",
+  "adresse": {
+    "strasse": "Kirschenallee",
+    "hausnummer": "3",
+    "plz": "78467",
+    "ort": "Konstanz",
+    "stadtteil": "Allmannsdorf"
+  },
+  "wohnflaeche_qm": 116.0,
+  "zimmer": 2.0,
+  "warnungen": [],
+  "datei": "b-021.html"
+}

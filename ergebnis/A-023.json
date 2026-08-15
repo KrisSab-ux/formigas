@@ -1,0 +1,17 @@
+{
+  "objekt_id": "A-023",
+  "quelle": "standort_a",
+  "vermarktungsart": "kauf",
+  "objekttyp": "wohnung",
+  "adresse": {
+    "strasse": "Uferwiesenweg",
+    "hausnummer": "24b",
+    "plz": "78333",
+    "ort": "Stockach",
+    "stadtteil": null
+  },
+  "wohnflaeche_qm": 40.0,
+  "zimmer": 1.5,
+  "warnungen": [],
+  "datei": "a-023.html"
+}

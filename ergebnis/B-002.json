@@ -1,0 +1,17 @@
+{
+  "objekt_id": "B-002",
+  "quelle": "standort_b",
+  "vermarktungsart": "miete",
+  "objekttyp": "gewerbe",
+  "adresse": {
+    "strasse": "Lindenhoehe",
+    "hausnummer": "12a",
+    "plz": "88690",
+    "ort": "Uhldingen-Muehlhofen",
+    "stadtteil": null
+  },
+  "wohnflaeche_qm": 138.0,
+  "zimmer": 5.0,
+  "warnungen": [],
+  "datei": "b-002.html"
+}

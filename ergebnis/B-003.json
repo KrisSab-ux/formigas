@@ -1,0 +1,17 @@
+{
+  "objekt_id": "B-003",
+  "quelle": "standort_b",
+  "vermarktungsart": "kauf",
+  "objekttyp": "wohnung",
+  "adresse": {
+    "strasse": "Alte Ziegelei",
+    "hausnummer": "5-7",
+    "plz": "78464",
+    "ort": "Konstanz",
+    "stadtteil": "Petershausen"
+  },
+  "wohnflaeche_qm": 115.0,
+  "zimmer": 1.0,
+  "warnungen": [],
+  "datei": "b-003.html"
+}

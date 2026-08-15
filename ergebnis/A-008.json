@@ -1,0 +1,17 @@
+{
+  "objekt_id": "A-008",
+  "quelle": "standort_a",
+  "vermarktungsart": "miete",
+  "objekttyp": "wohnung",
+  "adresse": {
+    "strasse": "Zum Sonnenhang",
+    "hausnummer": "12",
+    "plz": "88709",
+    "ort": "Meersburg",
+    "stadtteil": null
+  },
+  "wohnflaeche_qm": 132.0,
+  "zimmer": 3.5,
+  "warnungen": [],
+  "datei": "a-008.html"
+}

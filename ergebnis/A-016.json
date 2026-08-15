@@ -1,0 +1,17 @@
+{
+  "objekt_id": "A-016",
+  "quelle": "standort_a",
+  "vermarktungsart": "miete",
+  "objekttyp": "haus",
+  "adresse": {
+    "strasse": "Im Winkelgarten",
+    "hausnummer": "18",
+    "plz": "78315",
+    "ort": "Radolfzell",
+    "stadtteil": "Mettnau"
+  },
+  "wohnflaeche_qm": 255.0,
+  "zimmer": 5.5,
+  "warnungen": [],
+  "datei": "a-016.html"
+}

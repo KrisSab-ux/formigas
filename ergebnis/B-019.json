@@ -1,0 +1,17 @@
+{
+  "objekt_id": "B-019",
+  "quelle": "standort_b",
+  "vermarktungsart": "kauf",
+  "objekttyp": "wohnung",
+  "adresse": {
+    "strasse": "Ahornstrasse",
+    "hausnummer": "12a",
+    "plz": "78476",
+    "ort": "Allensbach",
+    "stadtteil": null
+  },
+  "wohnflaeche_qm": 48.0,
+  "zimmer": 1.5,
+  "warnungen": [],
+  "datei": "b-019.html"
+}

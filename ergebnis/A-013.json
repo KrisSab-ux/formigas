@@ -1,0 +1,17 @@
+{
+  "objekt_id": "A-013",
+  "quelle": "standort_a",
+  "vermarktungsart": "kauf",
+  "objekttyp": "wohnung",
+  "adresse": {
+    "strasse": "Uferwiesenweg",
+    "hausnummer": "12",
+    "plz": "78462",
+    "ort": "Konstanz",
+    "stadtteil": "Altstadt"
+  },
+  "wohnflaeche_qm": 134.0,
+  "zimmer": 2.5,
+  "warnungen": [],
+  "datei": "a-013.html"
+}

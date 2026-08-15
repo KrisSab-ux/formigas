@@ -1,0 +1,17 @@
+{
+  "objekt_id": "B-004",
+  "quelle": "standort_b",
+  "vermarktungsart": "miete",
+  "objekttyp": "haus",
+  "adresse": {
+    "strasse": "Steingasse",
+    "hausnummer": "5-7",
+    "plz": "88079",
+    "ort": "Kressbronn",
+    "stadtteil": null
+  },
+  "wohnflaeche_qm": 257.0,
+  "zimmer": 4.0,
+  "warnungen": [],
+  "datei": "b-004.html"
+}

@@ -1,0 +1,17 @@
+{
+  "objekt_id": "A-009",
+  "quelle": "standort_a",
+  "vermarktungsart": "kauf",
+  "objekttyp": "wohnung",
+  "adresse": {
+    "strasse": "Seeblickstrasse",
+    "hausnummer": "18",
+    "plz": "78476",
+    "ort": "Allensbach",
+    "stadtteil": null
+  },
+  "wohnflaeche_qm": 109.0,
+  "zimmer": 3.0,
+  "warnungen": [],
+  "datei": "a-009.html"
+}

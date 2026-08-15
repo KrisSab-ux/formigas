@@ -1,0 +1,17 @@
+{
+  "objekt_id": "A-022",
+  "quelle": "standort_a",
+  "vermarktungsart": "miete",
+  "objekttyp": "wohnung",
+  "adresse": {
+    "strasse": "Talblickweg",
+    "hausnummer": "12a",
+    "plz": "88709",
+    "ort": "Meersburg",
+    "stadtteil": null
+  },
+  "wohnflaeche_qm": 95.0,
+  "zimmer": 2.0,
+  "warnungen": [],
+  "datei": "a-022.html"
+}

@@ -1,0 +1,17 @@
+{
+  "objekt_id": "B-024",
+  "quelle": "standort_b",
+  "vermarktungsart": "miete",
+  "objekttyp": "gewerbe",
+  "adresse": {
+    "strasse": "Am Obstgarten",
+    "hausnummer": "24b",
+    "plz": "88662",
+    "ort": "Ueberlingen",
+    "stadtteil": "Nussdorf"
+  },
+  "wohnflaeche_qm": 111.0,
+  "zimmer": 6.0,
+  "warnungen": [],
+  "datei": "b-024.html"
+}

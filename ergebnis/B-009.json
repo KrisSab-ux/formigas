@@ -1,0 +1,17 @@
+{
+  "objekt_id": "B-009",
+  "quelle": "standort_b",
+  "vermarktungsart": "kauf",
+  "objekttyp": "wohnung",
+  "adresse": {
+    "strasse": "Fischerlaende",
+    "hausnummer": "18",
+    "plz": "78479",
+    "ort": "Reichenau",
+    "stadtteil": null
+  },
+  "wohnflaeche_qm": 82.0,
+  "zimmer": 4.0,
+  "warnungen": [],
+  "datei": "b-009.html"
+}

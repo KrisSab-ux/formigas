@@ -1,0 +1,17 @@
+{
+  "objekt_id": "B-010",
+  "quelle": "standort_b",
+  "vermarktungsart": "miete",
+  "objekttyp": "wohnung",
+  "adresse": {
+    "strasse": "Nussbaumweg",
+    "hausnummer": "7",
+    "plz": "88079",
+    "ort": "Kressbronn",
+    "stadtteil": null
+  },
+  "wohnflaeche_qm": 60.0,
+  "zimmer": 3.5,
+  "warnungen": [],
+  "datei": "b-010.html"
+}

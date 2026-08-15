@@ -1,0 +1,17 @@
+{
+  "objekt_id": "A-012",
+  "quelle": "standort_a",
+  "vermarktungsart": "miete",
+  "objekttyp": "wohnung",
+  "adresse": {
+    "strasse": "Kirschenallee",
+    "hausnummer": "12",
+    "plz": "78462",
+    "ort": "Konstanz",
+    "stadtteil": "Altstadt"
+  },
+  "wohnflaeche_qm": 90.0,
+  "zimmer": 1.0,
+  "warnungen": [],
+  "datei": "a-012.html"
+}

@@ -1,0 +1,17 @@
+{
+  "objekt_id": "B-025",
+  "quelle": "standort_b",
+  "vermarktungsart": "kauf",
+  "objekttyp": "gewerbe",
+  "adresse": {
+    "strasse": "Talblickweg",
+    "hausnummer": "31",
+    "plz": "88131",
+    "ort": "Lindau",
+    "stadtteil": "Aeschach"
+  },
+  "wohnflaeche_qm": 262.0,
+  "zimmer": 3.0,
+  "warnungen": [],
+  "datei": "b-025.html"
+}

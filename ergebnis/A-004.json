@@ -1,0 +1,17 @@
+{
+  "objekt_id": "A-004",
+  "quelle": "standort_a",
+  "vermarktungsart": "miete",
+  "objekttyp": "haus",
+  "adresse": {
+    "strasse": "Talblickweg",
+    "hausnummer": "24b",
+    "plz": "78462",
+    "ort": "Konstanz",
+    "stadtteil": "Altstadt"
+  },
+  "wohnflaeche_qm": 254.0,
+  "zimmer": 5.5,
+  "warnungen": [],
+  "datei": "a-004.html"
+}

@@ -1,0 +1,17 @@
+{
+  "objekt_id": "B-005",
+  "quelle": "standort_b",
+  "vermarktungsart": "kauf",
+  "objekttyp": "wohnung",
+  "adresse": {
+    "strasse": "Uferwiesenweg",
+    "hausnummer": "18",
+    "plz": "78464",
+    "ort": "Konstanz",
+    "stadtteil": "Petershausen"
+  },
+  "wohnflaeche_qm": 134.0,
+  "zimmer": 3.0,
+  "warnungen": [],
+  "datei": "b-005.html"
+}
