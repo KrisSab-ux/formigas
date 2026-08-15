@@ -3,6 +3,7 @@ __pycache__/
 *.pyc
 .env
 images/
+figures/
 
 # LaTeX-Buildartefakte (von pdflatex/xelatex erzeugt, nicht versionieren)
 *.aux
