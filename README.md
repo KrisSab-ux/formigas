@@ -33,7 +33,7 @@ Pflichtfelder hat — für CI-Anbindung gedacht.
 │   ├── standort_a/          25 HTML-Exposés, Standort A
 │   └── standort_b/          25 HTML-Exposés, Standort B
 ├── src/
-│   └── extract_required.py  Extraktions-Pipeline (Pflicht- + Zusatzfelder)
+│   └── extract_required.py  Extraktions-Pipeline (Pflicht- + Zusatzfelder + Schema-Validierung)
 ├── ergebnis/                 generiert beim Ausführen, nicht Teil des Repo-Inputs
 │   ├── <objekt_id>.json     ein JSON je valides Objekt
 │   ├── zu_pruefen/          Objekte mit fehlenden Pflichtfeldern
@@ -59,5 +59,6 @@ Siehe `requirements.txt`, per `pip install -r requirements.txt`:
   Fehler, die die eigene Logik nicht abdeckt — Ergebnis steht pro Objekt unter
   `schema_validierung`, siehe `ergebnis/_report.json` für die Übersicht.
 
-Keine weiteren Systemabhängigkeiten (kein LLM-Zugang nötig für die aktuell
-implementierten Felder, siehe Notizen zur Feldauswahl-Begründung).
+Keine weiteren Systemabhängigkeiten — kein LLM-Zugang nötig für die aktuell
+implementierten Felder (Begründung der Feldauswahl siehe
+[notizen/notes.tex](notizen/notes.tex)).
