@@ -4,6 +4,7 @@ __pycache__/
 .env
 images/
 figures/
+.claude/
 
 # LaTeX-Buildartefakte (von pdflatex/xelatex erzeugt, nicht versionieren)
 *.tex
