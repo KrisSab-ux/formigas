@@ -5,6 +5,7 @@ __pycache__/
 images/
 figures/
 .claude/
+.DS_Store
 
 # LaTeX-Buildartefakte (von pdflatex/xelatex erzeugt, nicht versionieren)
 *.tex
