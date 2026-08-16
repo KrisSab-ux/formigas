@@ -38,7 +38,7 @@
 \end{enumerate}
 
 % =========================================================
-\section{Vorgehen: Ziel 1}
+\section{Vorgehen: Ziel I}
 \subsection{Exploration}
 \begin{itemize}
     \item (I) Prüfen der Intra-Standort Variabilität der Eingaben (i.e. wie hoch ist die Eingabekonsistenz innerhalb der Standorte)
@@ -66,15 +66,24 @@
     \item Regex und Wortsuche aus auf <h1> als Primärquelle mit Fallback auf Eckdaten Tabelle. Warnungen und Errors werden geloggt und gesammelt mit einer Fehlerbeschreibung.
     \item Aufgrund von nicht eideutig lösbaren Inkonsistenzen erwarten die fehlerhaften Outputs einen HITL Ansatz.
 \end{itemize}
+\section{Vorgehen: Ziel II}
+\begin{itemize}
+    \item (II) Erwägen welches Datenmodell für den Kunden zukünftig am besten geeignet ist.
+    \item Ziel: Vorschlag einer SQL-Datenbank für kommerziellen Gebrauch.
+    \item Ergebnis: Erweitern des aktuellen Schemas um Informationen die für KundInnen und Vertrieb in einer SQL-Datenbank relevant sind
+\end{itemize}
 % =========================================================
 \section{Nutzung KI}
 \begin{itemize}
-    \item Error handling
-    \item jsonschema validation
+    \item (1)Initiale Vorschläge der KI berücksichtigten nicht wie Fehler im Output behandelt wurden und entschied eigenständig.
+    \item Änderung (1): Transparenz durch seperate Ablage und Flagging von fehlerhaften Extraktionsprozessen (Abbildung \ref{fig:error_1}, Abbildung \ref{fig:error_2})
+    \item (2) KI schlägt Validierung des Outputs durch \enquote{jsonschema} vor.
+    \item Änderung (2): Validierung des Outputs durch \enquote{jsonschema} alleine könnte zu starr sein, da die genau Ursache von Abweichungen in Größe und Art unklar bleibt. Stattdessen wird der Output in eine separate Datei geschrieben und mit einem Flag versehen, um die fehlgeschlagene Validierung zu kennzeichnen (\ref{fig:valid}).
 \end{itemize}
 
 \input{figures/error_1.tex}
 \input{figures/error_2.tex}
+\input{figures/valid.tex}
 
 % =========================================================
 
