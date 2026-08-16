@@ -63,7 +63,8 @@
 \end{table}
 \subsection{Umsetzung der Erkenntisse}
 \begin{itemize}
-    \item Regex und Wortsuche aus auf <h1> als Primärquelle mit Fallback auf Eckdaten Tabelle. Warnungen und Errors werden geloggt und gesammelt mit einer Fehlerbeschreibung.
+    \item Regex und Wortsuche aus auf <h1> als Primärquelle mit Fallback auf Eckdaten Tabelle. Hintergrund ist die Einheitlichkeit über die Standorte hinweg bezüglich der Formatierung dieses Feldes. Alternativ wärem Kreuzvalidierung über mehrere Felder denkbar aber fehleranfälliger.
+     Warnungen und Errors werden geloggt und gesammelt mit einer Fehlerbeschreibung.
     \item Aufgrund von nicht eideutig lösbaren Inkonsistenzen erwarten die fehlerhaften Outputs einen HITL Ansatz.
 \end{itemize}
 \section{Vorgehen: Ziel II}
@@ -71,6 +72,14 @@
     \item (II) Erwägen welches Datenmodell für den Kunden zukünftig am besten geeignet ist.
     \item Ziel: Vorschlag einer SQL-Datenbank für kommerziellen Gebrauch.
     \item Ergebnis: Erweitern des aktuellen Schemas um Informationen die für KundInnen und Vertrieb in einer SQL-Datenbank relevant sind
+\end{itemize}
+% =========================================================
+\section{Qualitätsaussage}
+\begin{itemize}
+    \item Aktuell werden einige empfindliche Annahmen von der Pipeline getroffen die aber im vorliegenden Kontext belastbar sind. 
+    \item Das Parsen mancher Felder ist monolitisch ohne guten Fallback, da dieser unter Umständen zu fehlerhaften Outputs führen kan (insbesondere bei Adressen)
+    \item Aktuelle Ergebnisse werden durch niederschwälligen, wartbaren und erweiterbaren Code gewonnen, was langfristig in dieser Form die beste Cost/Benefit Ratio aufweist.
+    \item Semantische Verarbeitung der Inhalte wurde bisher vermieden da vorliegendes Vokabular absehbar endlich scheint im Kontext.
 \end{itemize}
 % =========================================================
 \section{Nutzung KI}
@@ -84,6 +93,7 @@
 \input{figures/error_1.tex}
 \input{figures/error_2.tex}
 \input{figures/valid.tex}
+\input{figures/foto.tex}
 
 % =========================================================
 
